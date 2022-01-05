@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* --------------- Genreal */
+/* General */
+body {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    margin: 0;
+    /* background-color: #a7a7a7; */
+}
+
+.invis {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+    width:10px
+}
+
+body::-webkit-scrollbar-track {
+    background: #a7a7a7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6e6e6e;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+/* Anchors */
+a:focus,
+a:visited,
+a:active,
+a:link {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+.header-text {
+    font-family: "Roboto Slab", sans-serif;
+    text-transform: uppercase;
+    text-shadow:  -2px -2px 2px #faedc65b,
+                    1px 1px 0px #9c7d21,
+                    2px 2px 1px rgba(0, 0, 0, .75),
+                    3px 3px rgba(0, 0, 0, 0.452);
+}
+
+.body-text {
+    color: transparent;
+    text-shadow: 
+                -1px -1px 0px #faf9f6,
+                1px 1px 0px rgba(0, 0, 0, .25)
+                
+                ;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.custom-button {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    padding: .25em .5em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
+    margin: 0 .3rem;
+    width: fit-content;
+    transition-duration: .25s;
+    color: #fff!important;
+    border: 2px solid #ABEDED!important;
+    background: linear-gradient(45deg, #328787, #ABEDED 10%, #328787 40%);
+    /* background: linear-gradient(45deg, #138722, #1bc732, #18AD2C); */
+    text-shadow: 1px 1px #333;
+}
+
+/* ---------------------------------------------------------------------- */
+/* hero image and header text */
+
+.return-top {
+    position: fixed;
+    z-index: 9999999999999;
+    margin: .75rem;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 2.49rem
+}
+
+.return-top i {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.hero-header {
+    color: #fff;
+    text-shadow:
+                2px 0px #010203,
+                -2px 0px #010203,
+                0px 2px #010203,
+                0px -2px #010203,
+                0px 0px 6px #010203;
+    width: 100%;
+    /* position: relative; */
+    height: 100vh;
+}
+
+.hero-header h1{
+    font-size: 4rem!important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.hero-header p {
+    margin: 0 .75rem;
+    position: relative;
+    /* top: 15px; */
+    top: 45%;
+    transform: translateY(-45%);
+}
+
+
+.hero-header h1 span {
+    font-size: 2.5rem!important;
+}
+
+/* ---------------------------------------------------------------------- */
+/* general */
+
+.font-aws-header i {
+    color: #faf9f6;
+    font-size: 2.5rem;
+}
+
+.card {
+    padding: 2rem;
+    margin: 1.5rem 0rem;
+    background-color: #faf9f6;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699);
+}
+
+.container-fluid {
+    /* background-color: #a7a7a78e; */
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* parallax background */
+
+
+body {
+    background-color: #E4E6DB;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax-background {
+    position: relative;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../images/dusk-mountains.jpg");
+}
+
+/* ---------------------------------------------------------------------- */
+/* skills */
+.skills-background {
+    /* background-color: #0de3ff7c; */
+    /* height: 20rem; */
+}
+
+/* .gradient-background { */
+    /* background: linear-gradient(to bottom, rgba(18, 19, 21, 1) 5%, rgba(228, 230, 219, 1) 50%); */
+    /* background-color: rgb(228, 230, 219)
+} */
+
+.skills {
+    padding-left: 0;
+}
+
+.skills,
+.tech {
+    /* display: inline-block; */
+    float: left;
+    width: 33%;
+}
+
+.skills li,
+.tech li {
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: "Source Sans Pro", sans-serif; */
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+
+    /* flex-direction: column; */
+    /* display: block; */
+    /* float: left;
+    clear: left; */
+}
+
+.skills-lists__list1 {
+    /* display: flex;
+    flex-direction: row; */
+}
+
+/* ---------------------------------------------------------------------- */
+/* Summary */
+.summary p {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* projects */
+
+.project-button-container {
+    position: relative;
+
+}
+
+.project-name {
+    text-shadow: 2px 2px 2px #010203;
+}
+
+.project-button,
+.project-button-depressed {
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    padding: .25em .5em;
+    /* border-radius: 5px; */
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
+    inset 1px 1px 2px rgba(0, 0, 0, .0),
+    inset -1px -1px 2px rgba(0, 0, 0, .0)
+    
+    ;
+    margin: 0 .3rem;
+    width: fit-content;
+    transition-duration: .5s;
+    color: #fff;
+    border: 2px solid #225A63;
+    background: linear-gradient(45deg, #59B9C9, #2A717D);
+    /* background: linear-gradient(45deg, #138722, #1bc732, #18AD2C); */
+    text-shadow: 1px 1px #333;
+    transition-property: all;
+    /* transition-duration: 3s; */
+}
+
+.project-button-depressed {
+    box-shadow: 
+                        3px 3px 2px rgba(0, 0, 0, .5),
+                inset 1px 1px 2px rgba(0, 0, 0, .75),
+                inset -1px -1px 2px rgba(0, 0, 0, .75)
+    ;
+    /* border: 3px solid #15373d; */
+    /* transition-duration: 3s; */
+    background: linear-gradient(45deg, #3D7E8A, #15373D);
+
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    height: 100%;
+    width: fit-content;
+}
+
+.project-button-opacity {
+    opacity: 1;
+}
+
+.project-summary,
+.project-reasons {
+    font-size: 1.5rem;
+}
+
+.project-card {
+    position: relative;
+    margin: 1.5rem 0rem;
+    height: 30rem;
+    background-color: #faf9f6;
+    box-shadow: 
+                4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699)
+                ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-card-text {
+    color: #faf9f6;
+    border-radius: 10px;
+    background-color: #a7a7a771;
+    box-shadow: 
+                4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699)
+                ;
+    position: relative;
+}
+
+/* .project-card */
+
+.fat-raccoon-img {
+    background-image: url("../images/fat-raccoon.jpg");
+}
+
+.eldridge-music-img {
+    background-image: url("../images/eldridge-music.jpg");
+    position: relative;
+}
+
+.spinning-wheel-img {
+    background-image: url("../images/spinning-wheel.jpg");
+}
+
+.project-summary {
+    padding-left: 2rem;
+}
+
+.repository-link {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.repository-link span {
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    /* border-top: 2px solid #225A63;
+    border-bottom: 2px solid #225A63; */
+    border: 2px solid #225A63;
+    /* border: 2px solid #3D7E8A; */
+    background: linear-gradient(45deg, #59B9C9, #2A717D);
+    /* background-color: #59B9C9; */
+    /* border-radius: 20px; */
+    border-radius: 5px;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    color: #fff!important;
+    border: 2px solid #ABEDED!important;
+    background: linear-gradient(45deg, #328787, #ABEDED 10%, #328787 40%);
+    position: relative;
+    z-index: 0;
+}
+
+.project-reasons {
+    list-style-type: disc;
+    padding-left: 4rem;
+}
+
+.project-reasons li {
+    margin-bottom: .75rem;
+}
+
+.project-tech-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tech li {
+    width: fit-content;
+    margin-bottom: .75rem;
+}
+/* border colors for technology */
+.python-border {
+    border-bottom: 3px solid #336E9D;
+}
+
+.flask-border {
+    border-bottom: 3px solid #faf9f6;
+}
+
+.mongodb-border {
+    border-bottom: 3px solid #10AA50;
+}
+
+.heroku-border {
+    border-bottom: 3px solid #410099;
+    border-bottom: 3px solid #954ce4;
+}
+
+.github-border {
+    border-bottom: 3px solid #F34F29;
+}
+
+.javascript-border {
+    border-bottom: 3px solid #FDD83C;
+}
+
+.bootstrap-border {
+    border-bottom: 3px solid #7B09F8;
+}
+
+.html5-border {
+    border-bottom: 3px solid #EF652A;
+}
+
+.css3-border {
+    border-bottom: 3px solid #008DD3;
+}
+
+.postgresql-border {
+    border-bottom: 3px solid #336791;
+}
+
+.django-border{
+    border-bottom: 3px solid #0DC61E;
+}
+
+.stripe-border {
+    border-bottom: 3px solid #665BFF;
+}
+
+.aws-border {
+    border-bottom: 3px solid #FF9A00;
+}
+
+.image-filter-container,
+.text-filter-container {
+    position: absolute;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    /* background-color: chartreuse; */
+    top:-5px;
+    left: -5px;
+    overflow: hidden;
+}
+
+.image-filter,
+.text-filter {
+    position: relative;
+    z-index: 1;
+    /* box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+    inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+    inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+    -2px -2px 4px rgba(51, 51, 51, 0.699); */
+    /* background-color: chocolate; */
+    /* background: linear-gradient(to bottom, rgba(18, 19, 21, 1) 5%, rgba(228, 230, 219, 1) 50%); */
+}
+
+.text-filter {
+    background: linear-gradient(135deg, #FFE082, #B39849, #FFE082, #B39849, #FFE082);
+    /* border-radius: 10px; */
+    height: 0;
+    width: 100%;
+
+}
+
+.image-filter {
+    background: linear-gradient(25deg, #8298FF, #495CB3, #8298FF, #495CB3, #8298FF);
+    height: 100%;
+    width: 0;
+}
+.img-change-anim {
+    animation: 1s linear 0s 1 normal forwards image-change;
+}
+
+@keyframes image-change {
+    0%{width:0;}
+    100%{width:100%;}
+}
+
+.img-change-anim-finish {
+    animation: 1s linear 0s 1 normal forwards image-change-finish;
+}
+
+@keyframes image-change-finish {
+    0%{width:100%; transform: translateX(0)}
+    100%{width:100%; transform: translateX(100%);}
+}
+
+.text-change-anim {
+    animation: 1s linear 0s 1 normal forwards text-change;
+}
+
+@keyframes text-change {
+    0%{height:0%;}
+    100%{height:100%;}
+}
+
+.text-change-anim-finish {
+    animation: 1s linear 0s 1 normal forwards text-change-finish;
+}
+@keyframes text-change-finish {
+    0%{height:100%; transform: translateY(0)}
+    100%{height:100%; transform: translateY(100%);}
+}
+
+/* ---------------------------------------------------------------------- */
+/* contact */
+
+
+
+.font-aws i {
+    font-size: 2.5rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* footer */
+
+.footer,
+.footer i {
+    color: #faf9f6;
+}
+
+.footer-background {
+    position: relative;
+    background-image: url("../images/plains-mountains.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-size: 10vw; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* height: 100vh; */
+}
+
+
+
+
+.header-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+/* moving cover effect */
