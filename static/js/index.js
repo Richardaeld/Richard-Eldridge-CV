@@ -57,7 +57,7 @@ function ProjectButtonFunction(item) {
             // console.log(itemHeight)
 
             // find previous element
-            let findProject = document.querySelectorAll(".project-row")
+            let findProject = document.querySelectorAll(".projectRow")
             findProject.forEach(hideProject);
             function hideProject(visibleProject) {
                 if (!visibleProject.classList.contains("invis")) {

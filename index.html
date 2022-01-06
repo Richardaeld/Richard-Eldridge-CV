@@ -23,27 +23,17 @@
         <!-- hero image and name -->
         <div class="row g-0 justify-content-around">
             <div id="headerBackgroundFilter" class="header-filter"></div>
-            <div class="col-10 hero-header text-center" style="position: relative;">
-                <h1>Richard Eldridge <br>
+            <div class="col-10 hero-header text-center">
+                <h1 class="header-text">Richard Eldridge <br>
                     <span class="header-text">Full Stack Developer</span>
                 </h1>
-                <p class="row justify-content-center">
-                    <span class="col-4 custom-button">
-                        <a href="#skills">Skills</a>
-                    </span>
-                    <span class="col-4 custom-button">
-                        <a href="#summary">Summary</a>
-                    </span>
-                    <span class="col-4 custom-button">
-                        <a href="#projects">Projects</a>
-                    </span>
-                    <span class="col-4 custom-button">
-                        <a href="#contact">Contact</a>
-                    </span>
-                    <span class="col-4 custom-button">
-                        <a href="cv.html" target="_blank" >R&eacute;sum&eacute;</a>
-                    </span>
-                </p>
+                <div class="row justify-content-center hero-header-buttons">
+                    <a class="col-4 custom-button" href="#skills">Skills</a>
+                    <a class="col-4 custom-button" href="#summary">Summary</a>
+                    <a class="col-4 custom-button" href="#projects">Projects</a>
+                    <a class="col-4 custom-button" href="#contact">Contact</a>
+                    <a class="col-4 custom-button" href="cv.html" target="_blank" >R&eacute;sum&eacute;</a>
+                </div>
             </div>
         </div>
     </div>
@@ -52,34 +42,31 @@
     <div class="container-fluid footer-background">
 
         <!-- skills -->
-        <div class="container-fluid skills-background ">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-10">
                     <h2 id="skills" class="header-text mt-4 mb-2">Skills</h2>
-                    <div class="skills-lists">
-                        <ul class="skills mb-4">
+                    <div class="flex-between">
+                        <ul class="horizontal-ul mb-4">
                             <li>Python</li>
                             <li>JavaScript</li>
-                            <li>HTML5 / CSS3</li>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                        </ul>
-
-                        <ul class="skills mb-4">
-                            <li>VSCode</li>
-                            <li>Flask</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
                             <li>Django</li>
-                            <li>BootStrap</li>
-                            <li>Heroku</li>
-                            <li>MongoDB</li>
                         </ul>
 
-                        <ul class="skills mb-4">
-                            <li>PowerShell</li>
-                            <li>Bash</li>
-                            <li>SQLite3 (Django)</li>
-                            <li> PostgreSQL (Django)</li>
-                            <li> AWS (S3)</li>
+                        <ul class="horizontal-ul mb-4">
+                            <li>Flask</li>
+                            <li>BootStrap</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL (Django)</li>
+                        </ul>
+
+                        <ul class="horizontal-ul mb-4">
+                            <li>AWS (S3)</li>
+                            <li>Heroku</li>
+                            <li>GitHub</li>
+                            <li>Git</li>
                         </ul>
                     </div>
                     <!-- <ul class="skills">
@@ -91,11 +78,11 @@
             </div>
         </div>
         <!-- summary -->
-        <div class="container-fluid skills-background ">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-10 mb-5">
                     <h2 id="summary" class="header-text mt-4 mb-2">Summary</h2>
-                    <div class="skills-lists summary">
+                    <div class="">
                         <p class="summary-text">
                             Self-driven, coding boot camp graduate experienced in programming websites from scratch
                             and well-versed in multiple coding languages. Specializations include Python, JavaScript, and
@@ -110,13 +97,13 @@
         </div>
 
 
-        <!-- projects -->
+        <!-- Projects -->
         <div class="row justify-content-around">
             <div class="col-10">
-                <div class="row justify-content-between g-0" style="transition-duration: 1s;">
-
+                <div class="row justify-content-between g-0">
+                    <!-- Project selection buttons -->
                     <h2 id="projects" class="header-text">Projects</h2>
-                    <div class="col-12 mt-3 mb-4" style="display: flex; justify-content: space-around;">
+                    <div class="col-12 mt-3 mb-4 flex-around">
                         <div class="project-button-container">
                             <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
                             <div class="project-button">Fat Raccoon</div>
@@ -131,9 +118,9 @@
                         </div>
                     </div>
 
-                    <div id="fat-raccoon" class="col-12 project-row">
+                    <div id="fat-raccoon" class="col-12 projectRow">
                         <div class="row justify-content-between">
-                            <div class="col-10 col-lg-3 g-0 project-card fat-raccoon-img">
+                            <div class="col-10 col-lg-3 g-0 project-card-img fat-raccoon-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
@@ -161,14 +148,14 @@
                                     </li>
                                 </ul>
 
-                                <div class="repository-link my-4">
+                                <div class="project-links flex-around my-4">
                                     <a href="https://github.com/Richardaeld/Fat_Racoon_Kitchen">
-                                        <span>
+                                        <span class="custom-button">
                                             Repository
                                         </span>
                                     </a>
                                     <a href="https://fat-raccoon.herokuapp.com/">
-                                        <span>
+                                        <span class="custom-button">
                                             Live App
                                         </span>
                                     </a>
@@ -195,9 +182,9 @@
                     </div>
 
 
-                    <div id="eldridge-music-book-emporium" class="col-12 invis project-row">
+                    <div id="eldridge-music-book-emporium" class="col-12 invis projectRow">
                         <div class="row justify-content-between">
-                            <div class="col-10 col-lg-3 g-0 project-card eldridge-music-img">
+                            <div class="col-10 col-lg-3 g-0 project-card-img eldridge-music-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
@@ -227,14 +214,14 @@
 
                                     </li>
                                 </ul>
-                                <div class="repository-link my-4">
+                                <div class="project-links flex-around my-4">
                                     <a href="https://github.com/Richardaeld/Eldridge_Music">
-                                        <span>
+                                        <span class="custom-button">
                                             Repository
                                         </span>
                                     </a>
                                     <a href="https://eldridge-music.herokuapp.com/">
-                                        <span>
+                                        <span class="custom-button">
                                             Live App
                                         </span>
                                     </a>
@@ -263,9 +250,9 @@
                         </div>
                     </div>
 
-                    <div id="spinning-wheel-chairs" class="col-12 invis project-row">
+                    <div id="spinning-wheel-chairs" class="col-12 invis projectRow">
                         <div class="row justify-content-between">
-                            <div class="col-10 col-lg-3 g-0 project-card spinning-wheel-img">
+                            <div class="col-10 col-lg-3 g-0 project-card-img spinning-wheel-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
@@ -294,14 +281,14 @@
                                         Agile software development practices were utilized through constant communication
                                         via GitPod Projects and Slack which helped determine app features that were feasible.                                    </li>
                                 </ul>
-                                <div class="repository-link my-4">
+                                <div class="project-links flex-around my-4">
                                     <a href="https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2">
-                                        <span>
+                                        <span class="custom-button">
                                             Repository
                                         </span>
                                     </a>
                                     <a href="https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/">
-                                        <span>
+                                        <span class="custom-button">
                                             Live App
                                         </span>
                                     </a>
@@ -334,7 +321,7 @@
                 <!-- <h3>Contact</h3> -->
                 <div class="font-aws row justify-content-around">
 
-                    <a href="mailto:#" class="col-2">
+                    <a href="mailto:richardaeld@gmail.com" class="col-2">
                         <i class="fas fa-envelope-square"></i>
                     </a>
 
