@@ -73,7 +73,7 @@ a:link {
 
 .body-text {
     /* color: transparent; */
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, .25);
+    /* text-shadow: 0px 0px 2px rgba(0, 0, 0, .25); */
 }
 
 h1 {
@@ -100,6 +100,7 @@ h1 {
 
 .github-border {
     border-bottom: 3px solid #F34F29;
+    border-bottom: 3px solid #333;
 }
 
 .javascript-border {
@@ -132,6 +133,10 @@ h1 {
 
 .aws-border {
     border-bottom: 3px solid #FF9A00;
+}
+
+.git-border {
+    border-bottom: 3px solid #F34F29;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -211,6 +216,12 @@ h1 {
     background-image: url("../images/dusk-mountains.jpg");
 }
 /* ---------------------------------------------------------------------- */
+/* Skills */
+.skills li {
+    width: fit-content;
+}
+
+/* ---------------------------------------------------------------------- */
 /* Summary */
 .summary-text {
     letter-spacing: 1px;
@@ -225,7 +236,7 @@ h1 {
 }
 
 .project-name {
-    text-shadow: 2px 2px 2px #010203;
+    text-shadow: 2px 2px 2px #a7a7a7;
 }
 /* images */
 .fat-raccoon-img {
@@ -241,8 +252,14 @@ h1 {
     background-image: url("../images/spinning-wheel.jpg");
 }
 /* project selection buttons with effect */
+
+
+
+
 .project-button,
 .project-button-depressed {
+    position: relative;
+    z-index: 1;
     cursor: pointer;
     letter-spacing: 1px;
     padding: .25em .5em;
@@ -270,10 +287,17 @@ h1 {
     ;
     background: linear-gradient(45deg, #3D7E8A, #15373D);
     opacity: 0;
-    z-index: 999;
     position: absolute;
+    z-index: 2;
     height: 100%;
     width: fit-content;
+}
+
+.project-button-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .project-button-opacity {
@@ -293,22 +317,31 @@ h1 {
 .project-card-img {
     position: relative;
     margin: 1.5rem 0rem;
-    height: 30rem;
+    /* height: 30rem; */
     background-color: #faf9f6;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .project-card-text {
-    color: #faf9f6;
+    text-shadow: 0px 0px 2;
+    color: #333;
     border-radius: 10px;
-    background-color: #a7a7a771;
+    background-color: #dad6d6c9;
     position: relative;
     overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 /* project summary */
 .project-summary {
-    padding-left: 2rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
 }
 
 .project-summary,
@@ -324,6 +357,7 @@ h1 {
 
 .project-reasons li {
     margin-bottom: .75rem;
+    padding-right: 1.75rem;
 }
 
 .project-tech-container {
@@ -352,9 +386,9 @@ h1 {
 }
 /* project transition containers and animations */
 
-projectRow {
+/* projectRow {
     position: relative;
-}
+} */
 
 .invis-test {
     position: absolute;
@@ -370,7 +404,7 @@ projectRow {
     /* background-color: chartreuse; */
     top:-5px;
     left: -5px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .image-filter,
@@ -389,6 +423,7 @@ projectRow {
 
 .image-filter {
     background: linear-gradient(25deg, #8298FF, #495CB3, #8298FF, #495CB3, #8298FF);
+    /* border-radius: 10px; */
     height: 100%;
     width: 0;
 }
@@ -425,6 +460,19 @@ projectRow {
 @keyframes text-change-finish {
     0%{height:100%; transform: translateY(0)}
     100%{height:100%; transform: translateY(100%);}
+}
+
+.project-modal {
+    position: absolute;
+    z-index: -3;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.project-modal-image {
+    max-height: 90vh;
+    max-width: 90vw;
+    background-repeat: no-repeat;
 }
 
 /* ---------------------------------------------------------------------- */
