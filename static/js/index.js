@@ -61,6 +61,20 @@ function ProjectButtonFunction(item) {
             // find Id of item element
             let idName = item.textContent.replace(/ /g, "-").toLowerCase();
 
+
+            // disable/enable buttons
+            let findbuttons = document.querySelectorAll(".project-button-filter");
+            findbuttons.forEach(disableButtons);
+            function disableButtons(projectButtons) {
+                projectButtons.style.zIndex = 3
+                setTimeout(function() {
+                    projectButtons.style.zIndex = -1
+                },2000)
+
+            }
+
+
+
             // find previous element
             let findProject = document.querySelectorAll(".projectRow")
             findProject.forEach(hideProject);
@@ -138,9 +152,6 @@ function ProjectButtonFunction(item) {
 }
 
 
-// Revealing filter for Projects section
+// Project image modal
 
-// fetch('./projects.json')
-    // .then(response => response.json())
-    // .then(data => console.log(data))
-// console.log(projects)
+
