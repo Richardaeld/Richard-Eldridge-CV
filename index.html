@@ -11,6 +11,11 @@
         <meta name="description" content="Online CV index page">
     </head>
 <body>
+
+    <div class="project-modal">
+        <div class="project-modal-image"></div>
+    </div>
+
     <!-- to top arrow -->
     <div id="toTop" class="return-top invis">
         <a href="#headerBackground">
@@ -47,22 +52,35 @@
                 <div class="col-10">
                     <h2 id="skills" class="header-text mt-4 mb-2">Skills</h2>
                     <div class="flex-between">
-                        <ul class="horizontal-ul mb-4">
+                        <ul class="horizontal-ul skills mb-4">
                             <li>Python</li>
                             <li>JavaScript</li>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>Django</li>
+                            <!-- <li class="python-border">Python</li>
+                            <li class="javascript-border">JavaScript</li>
+                            <li class="html5-border">HTML5</li>
+                            <li class="css3-border">CSS3</li>
+                            <li class="django-border">Django</li> -->
                         </ul>
 
-                        <ul class="horizontal-ul mb-4">
+                        <ul class="horizontal-ul skills mb-4">
                             <li>Flask</li>
                             <li>BootStrap</li>
                             <li>MongoDB</li>
                             <li>PostgreSQL (Django)</li>
+                            <!-- <li class="flask-border">Flask</li>
+                            <li class="bootstrap-border">BootStrap</li>
+                            <li class="mongodb-border">MongoDB</li>
+                            <li class="postgresql-border">PostgreSQL (Django)</li> -->
                         </ul>
 
-                        <ul class="horizontal-ul mb-4">
+                        <ul class="horizontal-ul skills mb-4">
+                            <!-- <li class="aws-border">AWS (S3)</li>
+                            <li class="heroku-border">Heroku</li>
+                            <li class="github-border">GitHub</li>
+                            <li class="git-border">Git</li> -->
                             <li>AWS (S3)</li>
                             <li>Heroku</li>
                             <li>GitHub</li>
@@ -106,14 +124,17 @@
                         <h2 id="projects" class="header-text">Projects</h2>
                         <div class="col-12 mt-3 mb-4 flex-around">
                             <div class="project-button-container">
+                                <div class="project-button-filter"></div>
                                 <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
                                 <div class="project-button">Fat Raccoon</div>
                             </div>
                             <div class="project-button-container">
+                                <div class="project-button-filter"></div>
                                 <div class="project-button-depressed">Eldridge Music Book Emporium</div>
                                 <div class="project-button">Eldridge Music Book Emporium</div>
                             </div>
                             <div class="project-button-container">
+                                <div class="project-button-filter"></div>
                                 <div class="project-button-depressed">Spinning Wheel Chairs</div>
                                 <div class="project-button">Spinning Wheel Chairs</div>
                             </div>
@@ -131,8 +152,8 @@
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
-                                <h3 class="text-center mt-3 project-name">Fat Raccoon</h3>
-                                <p class="project-summary body-text ">
+                                <h3 class="text-center mt-4 mb-3 project-name">Fat Raccoon</h3>
+                                <p class="project-summary body-text">
                                     An application that serves as a community created recipe compendium that allows users to
                                     store and view recipes with a colorful and intuitive UX.
                                 </p>
@@ -318,7 +339,7 @@
 
         <!-- contact -->
         <div class="row justify-content-center backgroundElement">
-            <div id="contact" class="col-10 my-5 pt-5 footer ">
+            <div id="contact" class="col-10 my-5 footer ">
                 <!-- <h2 class="header-text mt-4">Contact</h2> -->
                 <!-- <h3>Contact</h3> -->
                 <div class="font-aws row justify-content-around">
