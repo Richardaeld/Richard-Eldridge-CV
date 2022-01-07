@@ -87,11 +87,20 @@ function ProjectButtonFunction(item) {
             }
 
             // Find height of background element
-            let backgroundHeight = document.getElementsByClassName("backgroundElement")[0].offsetHeight + document.getElementsByClassName("backgroundElement")[1].offsetHeight + document.getElementsByClassName("backgroundElement")[2].offsetHeight + document.getElementsByClassName("backgroundElement")[3].offsetHeight;
+            // let backgroundHeight = document.getElementsByClassName("backgroundElement")[0].offsetHeight + document.getElementsByClassName("backgroundElement")[1].offsetHeight + document.getElementsByClassName("backgroundElement")[2].offsetHeight + document.getElementsByClassName("backgroundElement")[3].offsetHeight;
+            var backgroundHeight = 0;
+            let findBackgroundTotal = document.querySelectorAll(".backgroundElement").length;
+            console.log(findBackgroundTotal)
+            for (i = 0; i <= findBackgroundTotal - 1; i++) {
+                // console.log(i)
+                let backgroundElementHeight = document.getElementsByClassName("backgroundElement")[i].offsetHeight;
+                backgroundHeight += backgroundElementHeight
+            }
 
 
 
-            console.log(backgroundHeight, "background img height - project")
+
+            // console.log(backgroundHeight, "background img height - project")
 
             // Find new element height
             let itemHeight = document.getElementById(idName).getElementsByClassName("project-card-text")[0].offsetHeight;
@@ -113,8 +122,12 @@ function ProjectButtonFunction(item) {
             let removeDepressed = document.querySelector(".project-button-opacity");
             removeDepressed.classList.remove("project-button-opacity")
 
-            // Adds button pused effect
+            // Adds button pushed effect
             item.classList.add("project-button-opacity")
+
+            // removes box shadow of unpushed button
+            
+
 
             setTimeout(function() {
                 // Hides previous project
