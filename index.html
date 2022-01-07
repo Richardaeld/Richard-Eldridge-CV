@@ -39,10 +39,10 @@
     </div>
 
     <!-- body image -->
-    <div class="container-fluid footer-background">
+    <div class="container-fluid footer-background" style="transition-duration: .25s;">
 
         <!-- skills -->
-        <div class="container-fluid">
+        <div class="container-fluid backgroundElement">
             <div class="row justify-content-center">
                 <div class="col-10">
                     <h2 id="skills" class="header-text mt-4 mb-2">Skills</h2>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <!-- summary -->
-        <div class="container-fluid">
+        <div class="container-fluid backgroundElement">
             <div class="row justify-content-center">
                 <div class="col-10 mb-5">
                     <h2 id="summary" class="header-text mt-4 mb-2">Summary</h2>
@@ -98,34 +98,36 @@
 
 
         <!-- Projects -->
-        <div class="row justify-content-around">
-            <div class="col-10">
-                <div class="row justify-content-between g-0">
+        <div class="row justify-content-around" style="transition-duration: 1s;">
+            <div class="col-10" style="transition-duration: 1s;">
+                <div class="row justify-content-between g-0" style="transition-duration: 1s; position: relative;">
                     <!-- Project selection buttons -->
-                    <h2 id="projects" class="header-text">Projects</h2>
-                    <div class="col-12 mt-3 mb-4 flex-around">
-                        <div class="project-button-container">
-                            <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
-                            <div class="project-button">Fat Raccoon</div>
-                        </div>
-                        <div class="project-button-container">
-                            <div class="project-button-depressed">Eldridge Music Book Emporium</div>
-                            <div class="project-button">Eldridge Music Book Emporium</div>
-                        </div>
-                        <div class="project-button-container">
-                            <div class="project-button-depressed">Spinning Wheel Chairs</div>
-                            <div class="project-button">Spinning Wheel Chairs</div>
+                    <div class="backgroundElement">
+                        <h2 id="projects" class="header-text">Projects</h2>
+                        <div class="col-12 mt-3 mb-4 flex-around">
+                            <div class="project-button-container">
+                                <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
+                                <div class="project-button">Fat Raccoon</div>
+                            </div>
+                            <div class="project-button-container">
+                                <div class="project-button-depressed">Eldridge Music Book Emporium</div>
+                                <div class="project-button">Eldridge Music Book Emporium</div>
+                            </div>
+                            <div class="project-button-container">
+                                <div class="project-button-depressed">Spinning Wheel Chairs</div>
+                                <div class="project-button">Spinning Wheel Chairs</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="fat-raccoon" class="col-12 projectRow">
+                    <div id="fat-raccoon" class="col-12 projectRow" style="transition-duration: 1s;">
                         <div class="row justify-content-between">
                             <div class="col-10 col-lg-3 g-0 project-card-img fat-raccoon-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 g-0 project-card-text">
+                            <div class="col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -182,14 +184,14 @@
                     </div>
 
 
-                    <div id="eldridge-music-book-emporium" class="col-12 invis projectRow">
+                    <div id="eldridge-music-book-emporium" class="col-12 invis-test projectRow">
                         <div class="row justify-content-between">
                             <div class="col-10 col-lg-3 g-0 project-card-img eldridge-music-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 g-0 project-card-text">
+                            <div class="col-lg-8 g-0 project-card-text"  style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -250,14 +252,14 @@
                         </div>
                     </div>
 
-                    <div id="spinning-wheel-chairs" class="col-12 invis projectRow">
+                    <div id="spinning-wheel-chairs" class="col-12 invis-test projectRow">
                         <div class="row justify-content-between">
                             <div class="col-10 col-lg-3 g-0 project-card-img spinning-wheel-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 g-0 project-card-text">
+                            <div class="col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -315,13 +317,13 @@
         </div>
 
         <!-- contact -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center backgroundElement">
             <div id="contact" class="col-10 my-5 pt-5 footer ">
                 <!-- <h2 class="header-text mt-4">Contact</h2> -->
                 <!-- <h3>Contact</h3> -->
                 <div class="font-aws row justify-content-around">
 
-                    <a href="mailto:richardaeld@gmail.com" class="col-2">
+                    <a href="mailto:" class="col-2">
                         <i class="fas fa-envelope-square"></i>
                     </a>
 
