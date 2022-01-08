@@ -282,6 +282,11 @@ h1 {
 }
 /* project selection buttons with effect */
 
+.project-button-display {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 
@@ -368,6 +373,17 @@ h1 {
     width: fit-content;
 }
 
+@media (max-width: 767.98px) {
+    .project-button-display {
+        display: block;
+    }
+    .project-button-depressed {
+        text-align: center;
+        margin: .75rem 0;
+        width: 100%;
+    }
+}
+
 .project-card-img,
 .project-card-text {
 
@@ -435,6 +451,19 @@ h1 {
 .tech li {
     width: fit-content;
     margin-bottom: .75rem;
+}
+
+.tech-small {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .tech {
+        display: none
+    }
+    .tech-small {
+        display: block;
+    }
 }
 
 /* link buttons */

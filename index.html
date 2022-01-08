@@ -52,6 +52,7 @@
                 <div class="col-10">
                     <h2 id="skills" class="header-text mt-4 mb-2">Skills</h2>
                     <div class="flex-between">
+                        <!-- Skills for large screens -->
                         <ul class="horizontal-ul skills mb-4">
                             <li>Python</li>
                             <li>JavaScript</li>
@@ -74,6 +75,7 @@
                             <li>Git</li>
                         </ul>
 
+                        <!-- Skills for small screens -->
                         <ul class="horizontal-ul skills-small mb-4">
                             <li>Python</li>
                             <li>JavaScript</li>
@@ -122,12 +124,12 @@
 
         <!-- Projects -->
         <div class="row justify-content-around mb-5">
-            <div class="col-10">
+            <div class="col-10 g-0">
                 <div class="row justify-content-between g-0" style="position: relative;">
                     <!-- Project selection buttons -->
                     <div class="backgroundElement">
                         <h2 id="projects" class="header-text">Projects</h2>
-                        <div class="col-12 mt-3 mb-4 flex-around">
+                        <div class="mt-3 mb-4 project-button-display flex-around">
                             <div class="project-button-container">
                                 <div class="project-button-filter"></div>
                                 <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
@@ -148,12 +150,12 @@
 
                     <div id="fat-raccoon" class="col-12 projectRow" style="transition-duration: 1s;">
                         <div class="row justify-content-center justify-content-lg-between">
-                            <div class="col-10 col-lg-3 g-0 project-card-img fat-raccoon-img">
+                            <div class="col-12 col-lg-3 g-0 project-card-img fat-raccoon-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-10 col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
+                            <div class="col-12 col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -189,6 +191,7 @@
                                     </a>
                                 </div>
                                 <div class="project-tech-container mb-3">
+                                    <!-- tech for large screens -->
                                     <ul class="tech">
                                         <li class="python-border">Python</li>
                                         <li class="flask-border">Flask</li>
@@ -204,6 +207,20 @@
                                         <li class="github-border">Github</li>
                                         <li class="heroku-border">Heroku</li>
                                     </ul>
+                                    <!-- Tech for small screens -->
+                                    <ul class="tech-small">
+                                        <li class="python-border">Python</li>
+                                        <li class="flask-border">Flask</li>
+                                        <li class="mongodb-border">MongoDB</li>
+                                        <li class="javascript-border">JavaScript</li>
+                                        <li class="html5-border">HTML5</li>
+                                    </ul>
+                                    <ul class="tech-small">
+                                        <li class="css3-border">CSS3</li>
+                                        <li class="bootstrap-border">Bootstrap</li>
+                                        <li class="github-border">Github</li>
+                                        <li class="heroku-border">Heroku</li>
+                                    </ul>
                                 </div>
                                 <!-- <div class="project-buffer"></div> -->
 
@@ -214,12 +231,12 @@
 
                     <div id="eldridge-music-book-emporium" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
-                            <div class="col-10 col-lg-3 g-0 project-card-img eldridge-music-img">
+                            <div class="col-12 col-lg-3 g-0 project-card-img eldridge-music-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-10 col-lg-8 g-0 project-card-text"  style="transition-duration: 1s;">
+                            <div class="col-12 col-lg-8 g-0 project-card-text"  style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -257,6 +274,7 @@
                                     </a>
                                 </div>
                                 <div class="project-tech-container mb-3">
+                                    <!-- tech for large screens -->
                                     <ul class="tech">
                                         <li class="python-border">Python</li>
                                         <li class="django-border">Django</li>
@@ -274,6 +292,22 @@
                                         <li class="aws-border">AWS</li>
                                         <li class="stripe-border">Stripe</li>
                                     </ul>
+                                    <!-- tech for small screens -->
+                                    <ul class="tech-small">
+                                        <li class="python-border">Python</li>
+                                        <li class="django-border">Django</li>
+                                        <li class="postgresql-border">PostgreSQL</li>
+                                        <li class="javascript-border">JavaScript</li>
+                                        <li class="html5-border">HTML5</li>
+                                        <li class="css3-border">CSS3</li>
+                                    </ul>
+                                    <ul class="tech-small">
+                                        <li class="bootstrap-border">Bootstrap</li>
+                                        <li class="github-border">Github</li>
+                                        <li class="heroku-border">Heroku</li>
+                                        <li class="aws-border">AWS</li>
+                                        <li class="stripe-border">Stripe</li>
+                                    </ul>
                                 </div>
                                 <!-- <div class="project-buffer"></div> -->
 
@@ -284,12 +318,12 @@
 
                     <div id="spinning-wheel-chairs" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
-                            <div class="col-10 col-lg-3 g-0 project-card-img spinning-wheel-img">
+                            <div class="col-12 col-lg-3 g-0 project-card-img spinning-wheel-img">
                                 <div class="image-filter-container">
                                     <div class="image-filter image-animate"></div>
                                 </div>
                             </div>
-                            <div class="col-10 col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
+                            <div class="col-12 col-lg-8 g-0 project-card-text" style="transition-duration: 1s;">
                                 <div class="text-filter-container">
                                     <div class="text-filter text-animate"></div>
                                 </div>
@@ -326,6 +360,7 @@
                                     </a>
                                 </div>
                                 <div class="project-tech-container mb-3">
+                                    <!-- tech for large screens -->
                                     <ul class="tech">
                                         <li class="javascript-border">JavaScript</li>
                                         <li class="html5-border">HTML5</li>
@@ -335,6 +370,16 @@
                                         <li class="bootstrap-border">Bootstrap</li>
                                     </ul>
                                     <ul class="tech">
+                                        <li class="github-border">Github</li>
+                                    </ul>
+                                    <!-- Tech for small screens -->
+                                    <ul class="tech-small">
+                                        <li class="javascript-border">JavaScript</li>
+                                        <li class="html5-border">HTML5</li>
+                                        <li class="css3-border">CSS3</li>
+                                    </ul>
+                                    <ul class="tech-small">
+                                        <li class="bootstrap-border">Bootstrap</li>
                                         <li class="github-border">Github</li>
                                     </ul>
                                 </div>
