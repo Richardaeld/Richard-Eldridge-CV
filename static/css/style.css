@@ -166,7 +166,7 @@ h1 {
 }
 
 .hero-header h1,
-.hero-header h1 span {
+.hero-header p {
     text-shadow: -2px 0px 0px #333,
                 2px 0px 0px #333,
                 0px 2px 0px #333,
@@ -175,7 +175,7 @@ h1 {
                 3px 3px rgba(0, 0, 0, 0.452);
 }
 
-.hero-header h1{
+.hero-header h1 {
     font-size: 4rem;
     position: relative;
     top: 50%;
@@ -183,22 +183,37 @@ h1 {
     color:#faf9f6;
 }
 
-.hero-header-buttons {
-    margin: 0 .75rem;
+.hero-header p {
+    color:#faf9f6;
     position: relative;
-    top: 45%;
-    transform: translateY(-45%);
+    top: 50%;
+    transform: translateY(-50%);
+  
 }
 
-.hero-header h1 span {
+.hero-header-buttons {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    margin: 0 .75rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.hero-header p {
     font-size: 2.5rem;
+    /* line-height: 1rem; */
 }
 
 @media (max-width: 767.98px) {
     .hero-header h1{
         font-size: 3rem;
     }
-    .hero-header h1 span {
+    .hero-header p {
+        top: 45%;
+        transform: translateY(-45%);
         font-size: 1.5rem;
     }
 }
@@ -231,6 +246,23 @@ h1 {
     background-attachment: fixed;
     background-image: url("../images/dusk-mountains.jpg");
 }
+
+@media (max-width: 767.98px) {
+    .hero-header-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .hero-header-buttons a {
+        width: 40%;
+        position: relative;
+        top: 1.75rem;
+        margin: .5rem .5rem;
+        /* height: 5rem; */
+    }
+}
+
 /* ---------------------------------------------------------------------- */
 /* Skills */
 .skills li {
@@ -604,6 +636,13 @@ h1 {
     /* background-attachment: fixed; */
     /* height: 100vh; */
     transition-duration: 1s;
+}
+
+@media (max-width: 767.98px) {
+    .footer-background {
+        background-size: auto 100%
+    }
+
 }
 
 .header-filter {
