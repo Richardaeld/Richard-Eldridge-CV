@@ -269,9 +269,9 @@ h1 {
     width: fit-content;
 }
 
-/* .skills-small {
+.skills-small {
     display: none;
-} */
+}
 
 @media (max-width: 767.98px) {
     .skills {
