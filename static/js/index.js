@@ -40,16 +40,43 @@ window.addEventListener('scroll', function() {
 
 })
 
+// give projects a fixed height
+function projectFixedHeights () {
+    let findProjects = document.querySelectorAll(".projectRow");
+    findProjects.forEach(setProjectHeight);
+    function setProjectHeight(projectBody) {
+        projectBody.getElementsByClassName("project-card-text")[0].style.height = "auto";
+        let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
+        projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
+        if (projectBody.classList.contains("invisMe")) {
+            // projectBody.classList.remove("invisMe")
+            projectBody.classList.add("invis-test")
+        }
+        console.log(itemHeight)
+    }
+}
 
-let findProjects = document.querySelectorAll(".projectRow");
-findProjects.forEach(setProjectHeight);
-function setProjectHeight(projectBody) {
-    let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
-    projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
-    console.log(itemHeight)
+function projectFixedHeightsWidthAdj () {
+    let findProjects = document.querySelectorAll(".projectRow");
+    findProjects.forEach(setProjectHeight);
+    function setProjectHeight(projectBody) {
+        projectBody.getElementsByClassName("project-card-text")[0].style.height = "auto";
+        let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
+        projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
+        if (projectBody.classList.contains("invisMe")) {
+            // projectBody.classList.remove("invisMe")
+            projectBody.classList.add("invis-test")
+        }
+        console.log(itemHeight)
+    }
 }
 
 
+window.addEventListener('resize', projectFixedHeightsWidthAdj)
+// window.onresize = projectFixedHeights;
+projectFixedHeights();
+
+function projectsFunction() {
 // Adds function to project buttons => hides and reveals projects on click with animation
 let projectButtons = document.querySelectorAll(".project-button-depressed");
 projectButtons.forEach(ProjectButtonFunction);
@@ -86,6 +113,12 @@ function ProjectButtonFunction(item) {
                 }
             }
 
+            // Give previous element invis identifier
+            previousElement.classList.add("invisMe")
+
+            // Remove invis identifier from new selection
+            document.getElementById(idName).classList.remove("invisMe")
+
             // Find height of background element
             // let backgroundHeight = document.getElementsByClassName("backgroundElement")[0].offsetHeight + document.getElementsByClassName("backgroundElement")[1].offsetHeight + document.getElementsByClassName("backgroundElement")[2].offsetHeight + document.getElementsByClassName("backgroundElement")[3].offsetHeight;
             var backgroundHeight = 0;
@@ -104,7 +137,7 @@ function ProjectButtonFunction(item) {
 
             // Find new element height
             let itemHeight = document.getElementById(idName).getElementsByClassName("project-card-text")[0].offsetHeight;
-            // console.log(itemHeight, "new height")
+            console.log(itemHeight, "new height")
             // console.log(previousElement, previousElement.offsetHeight,"old height")
             // console.log(document.getElementById(idName),document.getElementById(idName).offsetHeight ,"new height")
 
@@ -163,6 +196,13 @@ function ProjectButtonFunction(item) {
         }
     })
 }
+}
+
+
+window.onresize = projectsFunction;
+window.addEventListener("resize", projectsFunction);
+projectsFunction();
+
 
 
 // Project image modal

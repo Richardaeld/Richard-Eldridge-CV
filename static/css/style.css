@@ -194,6 +194,16 @@ h1 {
     font-size: 2.5rem;
 }
 
+@media (max-width: 767.98px) {
+    .hero-header h1{
+        font-size: 3rem;
+    }
+    .hero-header h1 span {
+        font-size: 1.5rem;
+    }
+}
+
+
 .custom-button {
     font-family: "Oswald", sans-serif;
     letter-spacing: 1px;
@@ -225,6 +235,19 @@ h1 {
 /* Skills */
 .skills li {
     width: fit-content;
+}
+
+/* .skills-small {
+    display: none;
+} */
+
+@media (max-width: 767.98px) {
+    .skills {
+        display: none;
+    }
+    .skills-small {
+        display: block;
+    }
 }
 
 /* ---------------------------------------------------------------------- */
@@ -269,15 +292,16 @@ h1 {
     z-index: 1;
     cursor: pointer;
     letter-spacing: 1px;
-    padding: .5em .75em;
-    border-radius: 20px;
+    padding: .75em 1em;
+    border-radius: 25px;
 
     margin: 0 .3rem;
     width: fit-content;
-    transition-duration: .5s;
+    /* transition-duration: .5s; */
     color: #fff;
     /* border: 2px solid #225A63; */
     background: linear-gradient(45deg, #59B9C9, #2A717D);
+    /* background-color: violet; */
     /* background: linear-gradient(45deg, #138722, #1bc732, #18AD2C); */
     /* text-shadow: 1px 1px #333; */
     text-shadow: 1px 1px #333,
@@ -292,8 +316,20 @@ h1 {
                 ;
 }
 
+.project-button-depressed,
+.project-button-opacity {
+    transition-duration: 1s!important;
+
+}
+
 .project-button-depressed {
-    box-shadow:
+
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
+                inset 1px 1px 2px rgba(0, 0, 0, .0),
+                inset -1px -1px 2px rgba(0, 0, 0, .0)
+
+                ;
+    /* box-shadow:
                 inset 2px 2px 2px rgba(0, 0, 0, .75),
                 inset -2px -2px 2px rgba(0, 0, 0, .75)
     ;
@@ -302,7 +338,7 @@ h1 {
     position: absolute;
     z-index: 2;
     height: 100%;
-    width: fit-content;
+    width: fit-content; */
 }
 
 .project-button-filter {
@@ -313,11 +349,28 @@ h1 {
 }
 
 .project-button-opacity {
-    opacity: 1;
+    /* opacity: 1; */
+
+    /* ------------------------ */
+    box-shadow:
+                0px 0px 0px rgba(0, 0, 0, .5),
+                inset 0px 4px 2px rgba(0, 0, 0, .65),
+                inset 4px 0px 2px rgba(0, 0, 0, .65),
+                inset 0px -4px 2px rgba(0, 0, 0, .65),
+                inset -4px 0px 2px rgba(0, 0, 0, .65)
+    ;
+    /* background: linear-gradient(45deg, #3D7E8A, #15373D); */
+    /* background-color: red; */
+    /* opacity: 0; */
+    /* position: absolute; */
+    /* z-index: 2; */
+    height: 100%;
+    width: fit-content;
 }
 
 .project-card-img,
 .project-card-text {
+
     box-shadow:
                 4px 4px 2px rgba(0, 0, 0, .35),
                 inset 2px 2px 4px rgba(51, 51, 51, 0.493),
@@ -333,11 +386,12 @@ h1 {
     background-color: #faf9f6;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 10px;
     overflow: hidden;
+    height: 40rem;
 }
 
 .project-card-text {
@@ -375,6 +429,7 @@ h1 {
 .project-tech-container {
     display: flex;
     justify-content: space-around;
+    /* padding-bottom: 1.5rem; */
 }
 
 .tech li {
@@ -404,6 +459,7 @@ h1 {
 
 .invis-test {
     position: absolute;
+    opacity: 0;
     z-index: -5;
 }
 
@@ -474,7 +530,7 @@ h1 {
     100%{height:100%; transform: translateY(100%);}
 }
 
-.project-modal {
+/* .project-modal {
     position: absolute;
     z-index: -3;
     max-height: 100%;
@@ -485,7 +541,11 @@ h1 {
     max-height: 90vh;
     max-width: 90vw;
     background-repeat: no-repeat;
-}
+} */
+
+/* .project-buffer {
+    height: 1.5rem;
+} */
 
 /* ---------------------------------------------------------------------- */
 /* contact */
