@@ -1,80 +1,61 @@
-// Fading light effect for Hero image
-let headerBackground = document.getElementById('headerBackground');
-let headerBackgroundFilter = document.getElementById('headerBackgroundFilter');
-let toTop = document.getElementById("toTop");
-
-viewHeight = window.innerHeight;
-// console.log(viewHeight)
-
-let view100 = viewHeight;
-let view75 = viewHeight * .75;
-let view50 = viewHeight * .5;
-let view25 = viewHeight * .25;
 
 
-
-window.addEventListener('scroll', function() {
-    if(this.scrollY < viewHeight) {
-        // adds toTop button to visibility
-        if (! toTop.classList.contains("invis")) {
-            toTop.classList.add("invis")
-        }
-
-        if(this.scrollY == 0) {
-            headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, 0)'
-        } else if (this.scrollY > 0 && this.scrollY < view25) {
-            headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, .45)'
-        } else if (this.scrollY > view25 && this.scrollY < view50) {
-            headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, .75)'
-        } else if (this.scrollY > view50 && this.scrollY < view75) {
-            headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, .85)'
-        } else if (this.scrollY > view75 && this.scrollY < view100) {
-            headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, .95)'
-        }
-    } else {
-        // removes toTop button from visibility
-        if (toTop.classList.contains("invis")) {
-            toTop.classList.remove("invis")
-        }
-    }
-
-})
-
-// give projects a fixed height
+// give projects an initial fixed height
 function projectFixedHeights () {
     let findProjects = document.querySelectorAll(".projectRow");
     findProjects.forEach(setProjectHeight);
     function setProjectHeight(projectBody) {
-        projectBody.getElementsByClassName("project-card-text")[0].style.height = "auto";
+        projectBody.getElementsByClassName("project-card-text")[0].style.height = "fit-content";
         let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
-        projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
+        // projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
         if (projectBody.classList.contains("invisMe")) {
-            // projectBody.classList.remove("invisMe")
             projectBody.classList.add("invis-test")
         }
         console.log(itemHeight)
     }
 }
 
-function projectFixedHeightsWidthAdj () {
-    let findProjects = document.querySelectorAll(".projectRow");
-    findProjects.forEach(setProjectHeight);
-    function setProjectHeight(projectBody) {
-        projectBody.getElementsByClassName("project-card-text")[0].style.height = "auto";
-        let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
-        projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
-        if (projectBody.classList.contains("invisMe")) {
-            // projectBody.classList.remove("invisMe")
-            projectBody.classList.add("invis-test")
-        }
-        console.log(itemHeight)
-    }
-}
+// function projectFixedHeightsWidthAdj () {
+//     let findProjects = document.querySelectorAll(".projectRow");
+//     findProjects.forEach(setProjectHeight);
+//     function setProjectHeight(projectBody) {
+//         projectBody.getElementsByClassName("project-card-text")[0].style.height = "auto";
+//         let itemHeight = projectBody.getElementsByClassName("project-card-text")[0].offsetHeight;
+//         projectBody.getElementsByClassName("project-card-text")[0].style.height = itemHeight + "px";
+//         if (projectBody.classList.contains("invisMe")) {
+//             // projectBody.classList.remove("invisMe")
+//             projectBody.classList.add("invis-test")
+//         }
+//         console.log(itemHeight)
+//     }
+// }
 
 
-window.addEventListener('resize', projectFixedHeightsWidthAdj)
+
+
+// window.addEventListener('resize', projectFixedHeightsWidthAdj)
 // window.onresize = projectFixedHeights;
 projectFixedHeights();
+
+
+// ON SCREEN RESIZE
+function resetVisibility() {
+    let findHiddenProjects = document.querySelectorAll(".invisMe");
+    findHiddenProjects.forEach(makeVisible);
+    function makeVisible(projectVisible) {
+        projectVisible.classList.remove("invis-test");
+        console.log(projectVisible.classList);
+    }
+    projectFixedHeights();
+
+    // findHiddenProjects.forEach(makeInvisible);
+    // function makeInvisible(projectInvisible) {
+    //     projectInvisible.classList.add("invis-test")
+    // }
+}
+window.addEventListener('resize', resetVisibility)
+
+
 
 function projectsFunction() {
 // Adds function to project buttons => hides and reveals projects on click with animation
@@ -113,6 +94,11 @@ function ProjectButtonFunction(item) {
                 }
             }
 
+            // sets previous elements height
+            previousElement.getElementsByClassName("project-card-text")[0].style.height = previousElementHeight + "px";
+
+
+
             // Give previous element invis identifier
             previousElement.classList.add("invisMe")
 
@@ -120,12 +106,10 @@ function ProjectButtonFunction(item) {
             document.getElementById(idName).classList.remove("invisMe")
 
             // Find height of background element
-            // let backgroundHeight = document.getElementsByClassName("backgroundElement")[0].offsetHeight + document.getElementsByClassName("backgroundElement")[1].offsetHeight + document.getElementsByClassName("backgroundElement")[2].offsetHeight + document.getElementsByClassName("backgroundElement")[3].offsetHeight;
             var backgroundHeight = 0;
             let findBackgroundTotal = document.querySelectorAll(".backgroundElement").length;
             console.log(findBackgroundTotal)
             for (i = 0; i <= findBackgroundTotal - 1; i++) {
-                // console.log(i)
                 let backgroundElementHeight = document.getElementsByClassName("backgroundElement")[i].offsetHeight;
                 backgroundHeight += backgroundElementHeight
             }
@@ -145,8 +129,6 @@ function ProjectButtonFunction(item) {
             document.getElementsByClassName("footer-background")[0].style.height = (backgroundHeight + itemHeight) + "px"
 
             // Animate height change
-            // previousElement.getElementsByClassName("text-animate")[0].style.height = itemHeight + "px";
-            // previousElement.parentElement.style.height = (itemHeight) + "px";
             previousElement.getElementsByClassName("project-card-text")[0].style.height = (itemHeight) + "px";
             // console.log(previousElement, " setting height here")
 
@@ -161,7 +143,7 @@ function ProjectButtonFunction(item) {
             // removes box shadow of unpushed button
             
 
-
+            // starts second animation and transition to clicked project
             setTimeout(function() {
                 // Hides previous project
                 previousElement.classList.add("invis-test")
@@ -189,7 +171,8 @@ function ProjectButtonFunction(item) {
                 previousElement.getElementsByClassName("text-animate")[0].classList.remove("text-change-anim")
 
                 // resets transitional height of previous project
-                previousElement.getElementsByClassName("project-card-text")[0].style.height = previousElementHeight + "px";
+                // previousElement.getElementsByClassName("project-card-text")[0].style.height = previousElementHeight + "px";
+                previousElement.getElementsByClassName("project-card-text")[0].style.height = "fit-content";
 
             },2000)
 
@@ -199,7 +182,10 @@ function ProjectButtonFunction(item) {
 }
 
 
-window.onresize = projectsFunction;
+
+
+
+// window.onresize = projectsFunction;
 window.addEventListener("resize", projectsFunction);
 projectsFunction();
 
