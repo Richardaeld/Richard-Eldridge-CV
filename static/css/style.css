@@ -76,11 +76,6 @@ a:link {
                     3px 3px rgba(0, 0, 0, 0.452);
 }
 
-.body-text {
-    /* color: transparent; */
-    /* text-shadow: 0px 0px 2px rgba(0, 0, 0, .25); */
-}
-
 h1 {
     font-family: "Roboto Slab", sans-serif;
 }
@@ -188,23 +183,17 @@ h1 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-  
 }
 
 .hero-header-buttons {
-    /* display: flex; */
-    /* justify-content: space-around; */
     margin: 0 .75rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-
-
 .hero-header p {
     font-size: 2.5rem;
-    /* line-height: 1rem; */
 }
 
 @media (max-width: 767.98px) {
@@ -252,17 +241,14 @@ h1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        /* flex-direction: column; */
     }
     .hero-header-buttons a {
         width: 40%;
         position: relative;
         top: 1.75rem;
         margin: .5rem .5rem;
-        /* height: 5rem; */
     }
 }
-
 /* ---------------------------------------------------------------------- */
 /* Skills */
 .skills li {
@@ -306,22 +292,16 @@ h1 {
 
 .eldridge-music-img {
     background-image: url("../images/eldridge-music.jpg");
-    /* position: relative; */
 }
 
 .spinning-wheel-img {
     background-image: url("../images/spinning-wheel.jpg");
 }
 /* project selection buttons with effect */
-
 .project-button-display {
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
 
 .project-button,
 .project-button-depressed {
@@ -331,16 +311,10 @@ h1 {
     letter-spacing: 1px;
     padding: .75em 1em;
     border-radius: 25px;
-
     margin: 0 .3rem;
     width: fit-content;
-    /* transition-duration: .5s; */
     color: #fff;
-    /* border: 2px solid #225A63; */
     background: linear-gradient(45deg, #59B9C9, #2A717D);
-    /* background-color: violet; */
-    /* background: linear-gradient(45deg, #138722, #1bc732, #18AD2C); */
-    /* text-shadow: 1px 1px #333; */
     text-shadow: 1px 1px #333,
     2px 2px 2px #010203;
 }
@@ -348,34 +322,19 @@ h1 {
 .project-button {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
                 inset 1px 1px 2px rgba(0, 0, 0, .0),
-                inset -1px -1px 2px rgba(0, 0, 0, .0)
-
-                ;
+                inset -1px -1px 2px rgba(0, 0, 0, .0);
 }
 
 .project-button-depressed,
 .project-button-opacity {
     transition-duration: 1s!important;
-
 }
 
 .project-button-depressed {
 
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
                 inset 1px 1px 2px rgba(0, 0, 0, .0),
-                inset -1px -1px 2px rgba(0, 0, 0, .0)
-
-                ;
-    /* box-shadow:
-                inset 2px 2px 2px rgba(0, 0, 0, .75),
-                inset -2px -2px 2px rgba(0, 0, 0, .75)
-    ;
-    background: linear-gradient(45deg, #3D7E8A, #15373D);
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    width: fit-content; */
+                inset -1px -1px 2px rgba(0, 0, 0, .0);
 }
 
 .project-button-filter {
@@ -386,21 +345,12 @@ h1 {
 }
 
 .project-button-opacity {
-    /* opacity: 1; */
-
     /* ------------------------ */
-    box-shadow:
-                0px 0px 0px rgba(0, 0, 0, .5),
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .5),
                 inset 0px 4px 2px rgba(0, 0, 0, .65),
                 inset 4px 0px 2px rgba(0, 0, 0, .65),
                 inset 0px -4px 2px rgba(0, 0, 0, .65),
-                inset -4px 0px 2px rgba(0, 0, 0, .65)
-    ;
-    /* background: linear-gradient(45deg, #3D7E8A, #15373D); */
-    /* background-color: red; */
-    /* opacity: 0; */
-    /* position: absolute; */
-    /* z-index: 2; */
+                inset -4px 0px 2px rgba(0, 0, 0, .65);
     height: 100%;
     width: fit-content;
 }
@@ -419,18 +369,15 @@ h1 {
 .project-card-img,
 .project-card-text {
 
-    box-shadow:
-                4px 4px 2px rgba(0, 0, 0, .35),
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
                 inset 2px 2px 4px rgba(51, 51, 51, 0.493),
                 inset -2px -2px 4px rgba(51, 51, 51, 0.493),
-                -2px -2px 4px rgba(51, 51, 51, 0.699)
-                ;
+                -2px -2px 4px rgba(51, 51, 51, 0.699);
 }
 
 .project-card-img {
     position: relative;
     margin: 1.5rem 0rem;
-    /* height: 30rem; */
     background-color: #faf9f6;
     background-size: cover;
     background-repeat: no-repeat;
@@ -513,17 +460,11 @@ h1 {
     z-index: 0;
 }
 /* project transition containers and animations */
-
-/* projectRow {
-    position: relative;
-} */
-
 .invis-test {
     position: absolute;
     opacity: 0;
     z-index: -5;
 }
-
 
 .image-filter-container,
 .text-filter-container {
@@ -544,7 +485,6 @@ h1 {
 
 .text-filter {
     background: linear-gradient(135deg, #FFE082, #B39849, #FFE082, #B39849, #FFE082);
-    /* border-radius: 10px; */
     height: 0;
     width: 100%;
 
@@ -552,7 +492,6 @@ h1 {
 
 .image-filter {
     background: linear-gradient(25deg, #8298FF, #495CB3, #8298FF, #495CB3, #8298FF);
-    /* border-radius: 10px; */
     height: 100%;
     width: 0;
 }
@@ -591,29 +530,8 @@ h1 {
     100%{height:100%; transform: translateY(100%);}
 }
 
-/* .project-modal {
-    position: absolute;
-    z-index: -3;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.project-modal-image {
-    max-height: 90vh;
-    max-width: 90vw;
-    background-repeat: no-repeat;
-} */
-
-/* .project-buffer {
-    height: 1.5rem;
-} */
-
 /* ---------------------------------------------------------------------- */
 /* contact */
-.font-aws {
-    
-}
-
 .font-aws i {
     font-size: 2.5rem;
 }
@@ -626,15 +544,10 @@ h1 {
 }
 
 .footer-background {
-    /* position: relative; */
     background-image: url("../images/plains-mountains.jpg");
     background-size: cover;
     background-size: 100% 100%;
-    /* background-attachment: fixed; */
-    /* background-size: 10vw; */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* height: 100vh; */
     transition-duration: 1s;
 }
 
@@ -642,7 +555,6 @@ h1 {
     .footer-background {
         background-size: auto 100%
     }
-
 }
 
 .header-filter {
@@ -652,4 +564,3 @@ h1 {
     background-color: rgba(0,0,0,0);
 }
 
-/* moving cover effect */
