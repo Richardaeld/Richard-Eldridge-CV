@@ -591,6 +591,7 @@ h1 {
 
 .text-filter-container,
 .image-filter-container {
+    transition-duration: .5s;
     opacity: 1;
     -webkit-opacity: 1;
 }
