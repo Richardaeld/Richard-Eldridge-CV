@@ -585,7 +585,7 @@ h1 {
     100%{opacity:1; height:100%; transform: translateY(0);}
 }
 @-webkit-keyframes text-change-finish {
-    0%{-webkit-opacity:0; height:100%; -webkit-transform: translateY(100%0);}
+    0%{-webkit-opacity:0; height:100%; -webkit-transform: translateY(100%);}
     100%{-webkit-opacity:1; height:100%; -webkit-transform: translateY(0);}
 }
 /* ---------------------------------------------------------------------- */
