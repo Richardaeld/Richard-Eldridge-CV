@@ -509,7 +509,7 @@ h1 {
     width: 0;
 }
 .img-change-anim {
-    animation: .25s linear 0s 1 normal forwards image-change;
+    animation: .5s linear 0s 1 normal forwards image-change;
 }
 
 /* @keyframes image-change {
@@ -529,7 +529,7 @@ h1 {
     100%{-webkit-opacity:1;}
 }
 .img-change-anim-finish {
-    animation: .25s linear 0s 1 normal forwards image-change-finish;
+    animation: .5s linear 0s 1 normal forwards image-change-finish;
 }
 
 /* @keyframes image-change-finish {
@@ -549,7 +549,7 @@ h1 {
     100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
 .text-change-anim {
-    animation: .25s linear 0s 1 normal forwards text-change;
+    animation: .5s linear 0s 1 normal forwards text-change;
 }
 
 /* @keyframes text-change {
@@ -570,7 +570,7 @@ h1 {
 }
 
 .text-change-anim-finish {
-    animation: .25s linear 0s 1 normal forwards text-change-finish;
+    animation: .5s linear 0s 1 normal forwards text-change-finish;
 }
 /* @keyframes text-change-finish {
     0%{height:100%; transform: translateY(0)}
