@@ -196,16 +196,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-@media (max-width: 767.98px) {
-    .hero-header h1{
-        font-size: 3rem;
-    }
-    .hero-header p {
-        top: 45%;
-        transform: translateY(-45%);
-        font-size: 1.5rem;
-    }
-}
+
 
 
 .custom-button {
@@ -235,20 +226,6 @@ h1 {
     background-size: 100vw 100vh;
     background-attachment: fixed;
 }
-
-@media (max-width: 767.98px) {
-    .hero-header-buttons {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .hero-header-buttons a {
-        width: 40%;
-        position: relative;
-        top: 1.75rem;
-        margin: .5rem .5rem;
-    }
-}
 /* ---------------------------------------------------------------------- */
 /* Skills */
 .skills li {
@@ -257,15 +234,6 @@ h1 {
 
 .skills-small {
     display: none;
-}
-
-@media (max-width: 767.98px) {
-    .skills {
-        display: none;
-    }
-    .skills-small {
-        display: block;
-    }
 }
 
 /* ---------------------------------------------------------------------- */
@@ -355,17 +323,6 @@ h1 {
     width: fit-content;
 }
 
-@media (max-width: 767.98px) {
-    .project-button-display {
-        display: block;
-    }
-    .project-button-depressed {
-        text-align: center;
-        margin: .75rem 0;
-        width: 100%;
-    }
-}
-
 .project-card-img,
 .project-card-text {
     opacity: 1;
@@ -377,8 +334,6 @@ h1 {
                 inset -2px -2px 4px rgba(51, 51, 51, 0.493),
                 -2px -2px 4px rgba(51, 51, 51, 0.699);
 }
-
-
 
 
 .project-card-img {
@@ -441,15 +396,6 @@ h1 {
 
 .tech-small {
     display: none;
-}
-
-@media (max-width: 767.98px) {
-    .tech {
-        display: none
-    }
-    .tech-small {
-        display: block;
-    }
 }
 
 /* link buttons */
@@ -535,12 +481,6 @@ h1 {
     transition-duration: .5s;
 }
 
-@media (max-width: 767.98px) {
-    .footer-background {
-        background-size: auto 100%
-    }
-}
-
 .header-filter {
     position: absolute;
     height: 100%;
@@ -548,3 +488,51 @@ h1 {
     background-color: rgba(0,0,0,0);
 }
 
+@media (max-width: 767.98px) {
+    /* Hero image header */
+    .hero-header h1{
+        font-size: 3rem;
+    }
+    .hero-header p {
+        top: 45%;
+        transform: translateY(-45%);
+        font-size: 1.5rem;
+    }
+    .hero-header-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-header-buttons a {
+        width: 40%;
+        position: relative;
+        top: 1.75rem;
+        margin: .5rem .5rem;
+    }
+    /* Skills */
+    .skills {
+        display: none;
+    }
+    .skills-small {
+        display: block;
+    }
+    /* Project */
+    .project-button-display {
+        display: block;
+    }
+    .project-button-depressed {
+        text-align: center;
+        margin: .75rem 0;
+        width: 100%;
+    }
+    .tech {
+        display: none
+    }
+    .tech-small {
+        display: block;
+    }
+    /* Body image */
+    .footer-background {
+        background-size: auto 100%
+    }
+}
