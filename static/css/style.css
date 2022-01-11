@@ -496,7 +496,7 @@ h1 {
     width: 0;
 }
 .img-change-anim {
-    animation: 1s linear 0s 1 normal forwards image-change;
+    animation: .25s linear 0s 1 normal forwards image-change;
 }
 
 @keyframes image-change {
@@ -505,7 +505,7 @@ h1 {
 }
 
 .img-change-anim-finish {
-    animation: 1s linear 0s 1 normal forwards image-change-finish;
+    animation: .25s linear 0s 1 normal forwards image-change-finish;
 }
 
 @keyframes image-change-finish {
@@ -514,7 +514,7 @@ h1 {
 }
 
 .text-change-anim {
-    animation: 1s linear 0s 1 normal forwards text-change;
+    animation: .25s linear 0s 1 normal forwards text-change;
 }
 
 @keyframes text-change {
@@ -523,7 +523,7 @@ h1 {
 }
 
 .text-change-anim-finish {
-    animation: 1s linear 0s 1 normal forwards text-change-finish;
+    animation: .25s linear 0s 1 normal forwards text-change-finish;
 }
 @keyframes text-change-finish {
     0%{height:100%; transform: translateY(0)}
@@ -548,7 +548,8 @@ h1 {
     background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transition-duration: 1s;
+    /* transition-duration: 1s; */
+    transition-duration: .25s;
 }
 
 @media (max-width: 767.98px) {
