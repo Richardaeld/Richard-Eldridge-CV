@@ -368,6 +368,7 @@ h1 {
 
 .project-card-img,
 .project-card-text {
+    -webkit-backface-visibility: hidden;
     /* transition-duration: .5s; */
     box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
                 inset 2px 2px 4px rgba(51, 51, 51, 0.493),
