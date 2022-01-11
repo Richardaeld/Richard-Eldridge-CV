@@ -230,10 +230,10 @@ h1 {
 /* parallax background (hero image) */
 .parallax-background {
     position: relative;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-image: url("../images/dusk-mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
 }
 
 @media (max-width: 767.98px) {
@@ -481,7 +481,7 @@ h1 {
     top:-5px;
     left: -5px; */
     /* background-color: chartreuse; */
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 .text-filter-container,
@@ -503,31 +503,31 @@ h1 {
     left: -5px;
 }
 
-.image-filter,
+/* .image-filter,
 .text-filter {
     position: relative;
     z-index: 1;
-}
+} */
 
-.text-filter {
+/* .text-filter { */
     /* dad6d6c9 */
     /* background: linear-gradient(135deg, #FFE082, #B39849, #FFE082, #B39849, #FFE082); */
     /* background: linear-gradient(135deg, #dad6d6, #dad6d6, #dad6d6, #dad6d6, #dad6d6); */
-    background: linear-gradient(135deg, #92E0A4, #9DE0D3, #92E0A4, #9DE0D3, #92E0A4);
+    /* background: linear-gradient(135deg, #92E0A4, #9DE0D3, #92E0A4, #9DE0D3, #92E0A4);
     height: 0;
     width: 100%;
 
-}
+} */
 
-.image-filter {
+/* .image-filter { */
     /* background: linear-gradient(25deg, #8298FF, #495CB3, #8298FF, #495CB3, #8298FF); */
-    background: linear-gradient(135deg, #92E0A4, #9DE0D3, #92E0A4, #9DE0D3, #92E0A4);
+    /* background: linear-gradient(135deg, #92E0A4, #9DE0D3, #92E0A4, #9DE0D3, #92E0A4);
     height: 100%;
     width: 0;
-}
-.img-change-anim {
+} */
+/* .img-change-anim {
     animation: .5s linear 0s 1 normal forwards image-change;
-}
+} */
 
 /* @keyframes image-change {
     0%{width:0;}
@@ -537,14 +537,14 @@ h1 {
     0%{width:0;}
     100%{width:100%;}
 } */
-@keyframes image-change {
+/* @keyframes image-change {
     0%{opacity:1;}
     100%{opacity:0;}
 }
 @-webkit-keyframes image-change {
     0%{-webkit-opacity:0;}
     100%{-webkit-opacity:1;}
-}
+} */
 .img-change-anim-finish {
     animation: .5s linear 0s 1 normal forwards image-change-finish;
 }
@@ -565,9 +565,9 @@ h1 {
     0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
     100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
-.text-change-anim {
+/* .text-change-anim {
     animation: .5s linear 0s 1 normal forwards text-change;
-}
+} */
 
 /* @keyframes text-change {
     0%{height:100%; transform: translateX(100%)}
@@ -577,14 +577,14 @@ h1 {
     0%{height:100%; -webkit-transform: translateX(100%)}
     100%{height:100%; -webkit-transform: translateX(0%);}
 } */
-@keyframes text-change {
+/* @keyframes text-change {
     0%{opacity:1;}
     100%{opacity:0;}
 }
 @-webkit-keyframes text-change {
     0%{-webkit-opacity:1;}
     100%{-webkit-opacity:0;}
-}
+} */
 
 .text-change-anim-finish {
     animation: .5s linear 0s 1 normal forwards text-change-finish;
