@@ -149,12 +149,13 @@ function ProjectButtonFunction(item) {
                 previousElement.classList.add("invis-test")
                 // Reveals selected project
                 document.getElementById(idName).classList.remove("invis-test")
-            // Image animation
-            // document.getElementById(idName).getElementsByClassName("text-animate")[0].classList.add("text-change-anim-finish")
-            document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim-finish")
-            // Text animation
-            // document.getElementById(idName).getElementsByClassName("image-animate")[0].classList.add("img-change-anim-finish")
-            document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish")
+                
+                // Image animation
+                // document.getElementById(idName).getElementsByClassName("text-animate")[0].classList.add("text-change-anim-finish")
+                document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim-finish")
+                // Text animation
+                // document.getElementById(idName).getElementsByClassName("image-animate")[0].classList.add("img-change-anim-finish")
+                document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish")
             },500)
 
             // starts first animation
