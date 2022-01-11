@@ -525,8 +525,8 @@ h1 {
     100%{opacity:0;}
 }
 @-webkit-keyframes image-change {
-    0%{opacity:0;}
-    100%{opacity:1;}
+    0%{-webkit-opacity:0;}
+    100%{-webkit-opacity:1;}
 }
 .img-change-anim-finish {
     animation: .25s linear 0s 1 normal forwards image-change-finish;
@@ -545,8 +545,8 @@ h1 {
     100%{opacity:1; transform: translateY(0)}
 }
 @-webkit-keyframes image-change-finish {
-    0%{opacity:0; transform: translateY(100%)}
-    100%{opacity:1; transform: translateY(0)}
+    0%{-webkit-opacity:0; transform: translateY(100%)}
+    100%{-webkit-opacity:1; transform: translateY(0)}
 }
 .text-change-anim {
     animation: .25s linear 0s 1 normal forwards text-change;
@@ -565,8 +565,8 @@ h1 {
     100%{opacity:0;}
 }
 @-webkit-keyframes text-change {
-    0%{opacity:1;}
-    100%{opacity:0;}
+    0%{-webkit-opacity:1;}
+    100%{-webkit-opacity:0;}
 }
 
 .text-change-anim-finish {
@@ -585,8 +585,8 @@ h1 {
     100%{opacity:1; height:100%; transform: translateY(0);}
 }
 @-webkit-keyframes text-change-finish {
-    0%{opacity:0; height:100%; -webkit-transform: translateY(100%0);}
-    100%{opacity:1; height:100%; -webkit-transform: translateY(0);}
+    0%{-webkit-opacity:0; height:100%; -webkit-transform: translateY(100%0);}
+    100%{-webkit-opacity:1; height:100%; -webkit-transform: translateY(0);}
 }
 /* ---------------------------------------------------------------------- */
 /* contact */
