@@ -588,6 +588,13 @@ h1 {
     0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
     100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
+
+.text-filter-container,
+.image-filter-container {
+    opacity: 1;
+    -webkit-opacity: 1;
+}
+
 /* ---------------------------------------------------------------------- */
 /* contact */
 .font-aws i {
