@@ -77,7 +77,7 @@ function ProjectButtonFunction(item) {
                 projectButtons.style.zIndex = 3
                 setTimeout(function() {
                     projectButtons.style.zIndex = -1
-                },500)
+                },1000)
 
             }
 
@@ -153,7 +153,7 @@ function ProjectButtonFunction(item) {
             document.getElementById(idName).getElementsByClassName("text-animate")[0].classList.add("text-change-anim-finish")
             // Text animation
             document.getElementById(idName).getElementsByClassName("image-animate")[0].classList.add("img-change-anim-finish")
-            },250)
+            },500)
 
             // Image animation
             previousElement.getElementsByClassName("image-animate")[0].classList.add("img-change-anim")
@@ -174,7 +174,7 @@ function ProjectButtonFunction(item) {
                 // previousElement.getElementsByClassName("project-card-text")[0].style.height = previousElementHeight + "px";
                 previousElement.getElementsByClassName("project-card-text")[0].style.height = "fit-content";
 
-            },500)
+            },1000)
 
         }
     })
