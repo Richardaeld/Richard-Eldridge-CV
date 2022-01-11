@@ -143,6 +143,16 @@ function ProjectButtonFunction(item) {
             // removes box shadow of unpushed button
             
 
+            // starts first animation
+            // Image animation
+            // previousElement.getElementsByClassName("image-animate")[0].classList.add("img-change-anim")
+            // previousElement.getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim")
+            previousElement.getElementsByClassName("image-filter-container")[0].classList.add("opacityFalse")
+            // Text animation
+            // previousElement.getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim")
+            previousElement.getElementsByClassName("text-filter-container")[0].classList.add("opacityFalse")
+
+
             // starts second animation and transition to clicked project
             setTimeout(function() {
                 // Hides previous project
@@ -158,14 +168,7 @@ function ProjectButtonFunction(item) {
                 document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish")
             },500)
 
-            // starts first animation
-            // Image animation
-            // previousElement.getElementsByClassName("image-animate")[0].classList.add("img-change-anim")
-            // previousElement.getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim")
-            previousElement.getElementsByClassName("image-filter-container")[0].classList.add("opacityFalse")
-            // Text animation
-            // previousElement.getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim")
-            previousElement.getElementsByClassName("text-filter-container")[0].classList.add("opacityFalse")
+
 
 
 
@@ -177,12 +180,13 @@ function ProjectButtonFunction(item) {
                 // document.getElementById(idName).getElementsByClassName("text-animate")[0].classList.remove("text-change-anim-finish")
                 // previousElement.getElementsByClassName("text-animate")[0].classList.remove("text-change-anim")
 
-                document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish")
+                document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish");
                 // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim")
-                previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse")
-                document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish")
+                previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
+
+                document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish");
                 // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim")
-                previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse")
+                previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
 
 
 
