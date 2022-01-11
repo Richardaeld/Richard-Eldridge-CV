@@ -176,10 +176,13 @@ function ProjectButtonFunction(item) {
                 // previousElement.getElementsByClassName("image-animate")[0].classList.remove("img-change-anim")
                 // document.getElementById(idName).getElementsByClassName("text-animate")[0].classList.remove("text-change-anim-finish")
                 // previousElement.getElementsByClassName("text-animate")[0].classList.remove("text-change-anim")
+
                 document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish")
-                previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim")
+                // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim")
+                previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse")
                 document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish")
-                previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim")
+                // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim")
+                previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse")
 
 
 
