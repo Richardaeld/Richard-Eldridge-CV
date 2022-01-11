@@ -541,12 +541,12 @@ h1 {
     100%{width:100%; -webkit-transform: translateY(100%);}
 } */
 @keyframes image-change-finish {
-    0%{opacity:0; transform: translateY(100%)}
-    100%{opacity:1; transform: translateY(0)}
+    0%{opacity:0; transform: translateY(100%);}
+    100%{opacity:1; transform: translateY(0);}
 }
 @-webkit-keyframes image-change-finish {
-    0%{-webkit-opacity:0; transform: translateY(100%)}
-    100%{-webkit-opacity:1; transform: translateY(0)}
+    0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
+    100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
 .text-change-anim {
     animation: .25s linear 0s 1 normal forwards text-change;
@@ -581,12 +581,12 @@ h1 {
     100%{height:100%; -webkit-transform: translateY(100%);}
 } */
 @keyframes text-change-finish {
-    0%{opacity:0; height:100%; transform: translateY(100%);}
-    100%{opacity:1; height:100%; transform: translateY(0);}
+    0%{opacity:0; transform: translateY(100%);}
+    100%{opacity:1; transform: translateY(0);}
 }
 @-webkit-keyframes text-change-finish {
-    0%{-webkit-opacity:0; height:100%; -webkit-transform: translateY(100%);}
-    100%{-webkit-opacity:1; height:100%; -webkit-transform: translateY(0);}
+    0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
+    100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
 /* ---------------------------------------------------------------------- */
 /* contact */
