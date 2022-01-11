@@ -507,6 +507,10 @@ h1 {
     0%{width:0;}
     100%{width:100%;}
 }
+@-webkit-keyframes image-change {
+    0%{width:0;}
+    100%{width:100%;}
+}
 
 .img-change-anim-finish {
     animation: .25s linear 0s 1 normal forwards image-change-finish;
@@ -515,6 +519,10 @@ h1 {
 @keyframes image-change-finish {
     0%{width:100%; transform: translateY(0)}
     100%{width:100%; transform: translateY(100%);}
+}
+@-webkit-keyframes image-change-finish {
+    0%{width:100%; -webkit-transform: translateY(0)}
+    100%{width:100%; -webkit-transform: translateY(100%);}
 }
 
 .text-change-anim {
@@ -525,6 +533,10 @@ h1 {
     0%{height:100%; transform: translateX(100%)}
     100%{height:100%; transform: translateX(0%);}
 }
+@-webkit-keyframes text-change {
+    0%{height:100%; -webkit-transform: translateX(100%)}
+    100%{height:100%; -webkit-transform: translateX(0%);}
+}
 
 .text-change-anim-finish {
     animation: .25s linear 0s 1 normal forwards text-change-finish;
@@ -532,6 +544,10 @@ h1 {
 @keyframes text-change-finish {
     0%{height:100%; transform: translateY(0)}
     100%{height:100%; transform: translateY(100%);}
+}
+@-webkit-keyframes text-change-finish {
+    0%{height:100%; -webkit-transform: translateY(0)}
+    100%{height:100%; -webkit-transform: translateY(100%);}
 }
 
 /* ---------------------------------------------------------------------- */
