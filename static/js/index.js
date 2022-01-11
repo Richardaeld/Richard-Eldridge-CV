@@ -160,9 +160,11 @@ function ProjectButtonFunction(item) {
             // starts first animation
             // Image animation
             // previousElement.getElementsByClassName("image-animate")[0].classList.add("img-change-anim")
-            previousElement.getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim")
+            // previousElement.getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim")
+            previousElement.getElementsByClassName("image-filter-container")[0].classList.add("opacityFalse")
             // Text animation
-            previousElement.getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim")
+            // previousElement.getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim")
+            previousElement.getElementsByClassName("text-filter-container")[0].classList.add("opacityFalse")
 
 
 

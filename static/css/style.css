@@ -369,12 +369,16 @@ h1 {
 .project-card-img,
 .project-card-text {
     -webkit-opacity: 1;
-    -webkit-backface-visibility: hidden;
-    /* transition-duration: .5s; */
+    /* -webkit-backface-visibility: hidden; */
+    transition-duration: .5s;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
                 inset 2px 2px 4px rgba(51, 51, 51, 0.493),
                 inset -2px -2px 4px rgba(51, 51, 51, 0.493),
                 -2px -2px 4px rgba(51, 51, 51, 0.699);
+}
+
+.opacityFalse {
+    opacity: 0;
 }
 
 .project-card-img {
