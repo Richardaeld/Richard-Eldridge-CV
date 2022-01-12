@@ -333,6 +333,7 @@ h1 {
 }
 
 .project-card-text {
+    min-height: 20rem;
     text-shadow: 0px 0px 2;
     color: #333;
     background-color: #dad6d6c9;
@@ -386,10 +387,6 @@ h1 {
     transition-duration: .5s;
     opacity: 1;
     -webkit-opacity: 1;
-}
-
-.text-filter-container {
-    height:40rem;
 }
 
 .opacityFalse {
