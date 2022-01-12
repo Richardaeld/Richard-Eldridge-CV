@@ -221,7 +221,7 @@ h1 {
 /* parallax background (hero image) */
 .parallax-background {
     position: relative;
-    background: url("../images/dusk-mountains.jpg") center / 100vw 100vh no-repeat fixed #333;
+    background: #333 url("../images/dusk-mountains.jpg") center / 100vw 100vh no-repeat fixed;
 }
 
 .filter,
