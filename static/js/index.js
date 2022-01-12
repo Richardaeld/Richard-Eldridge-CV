@@ -147,6 +147,10 @@ function projectsFunction() {
                     // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("translate-away");
                     // Text animation
                     // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish");
+                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
+                    document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
+                    // resets transitional height of previous project
+                    previousElement.getElementsByClassName("text-filter-container")[0].style.height = "fit-content";
                     // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("translate-away");
                 },500);
 
@@ -157,9 +161,9 @@ function projectsFunction() {
                     // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish");
                     // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
 
-                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
+                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
                     // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("project-change-anim-start");
-                    document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
+                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
                     // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
 
 
