@@ -448,8 +448,8 @@ h1 {
         font-size: 3rem;
     }
     .hero-header p {
-        top: 45%;
-        transform: translateY(-45%);
+        top: 38.5%;
+        transform: translateY(-38.5%);
         font-size: 1.5rem;
     }
     .hero-header-buttons {
