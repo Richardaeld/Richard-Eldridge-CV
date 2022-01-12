@@ -163,8 +163,8 @@ h1 {
 .hero-header h1,
 .hero-header p {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
     color:#faf9f6;
     text-shadow: -2px 0px 0px #333,
                 2px 0px 0px #333,
@@ -181,8 +181,8 @@ h1 {
 .hero-header-buttons {
     margin: 0 .75rem;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
 }
 
 .hero-header p {
@@ -222,8 +222,8 @@ h1 {
 /* Short hand doesn't work in safari */
 .parallax-background {
     position: relative;
-    background-image: url("../images/dusk-mountains.jpg");
     background-color: #333;
+    background-image: url("../images/dusk-mountains.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
