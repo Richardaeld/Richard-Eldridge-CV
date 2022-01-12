@@ -474,6 +474,9 @@ h1 {
         margin: .75rem 0;
         width: 100%;
     }
+    .project-card-text {
+        height: 10;
+    }
     .tech {
         display: none
     }
