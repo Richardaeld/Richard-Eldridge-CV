@@ -66,7 +66,7 @@ a:link {
     color: #faf9f6;
     text-decoration: none;
 }
-/* Text */
+/* Header text */
 .header-text {
     font-family: "Roboto Slab", sans-serif;
     text-transform: uppercase;
@@ -162,6 +162,10 @@ h1 {
 
 .hero-header h1,
 .hero-header p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#faf9f6;
     text-shadow: -2px 0px 0px #333,
                 2px 0px 0px #333,
                 0px 2px 0px #333,
@@ -172,17 +176,6 @@ h1 {
 
 .hero-header h1 {
     font-size: 4rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color:#faf9f6;
-}
-
-.hero-header p {
-    color:#faf9f6;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .hero-header-buttons {
@@ -196,22 +189,29 @@ h1 {
     font-size: 2.5rem;
 }
 
-
-
-
 .custom-button {
-    font-family: "Oswald", sans-serif;
     letter-spacing: 1px;
     padding: .5em .75em;
     border-radius: 20px;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
     margin: 0 .5rem;
     width: fit-content;
-    transition-duration: .25s;
+    transition-duration: .5s;
     border: 2px solid #ABEDED;
     background: linear-gradient(45deg, #328787, #ABEDED 10%, #328787 40%);
     text-shadow: 1px 1px #333,
                 2px 2px 2px #010203;
+}
+
+.custom-button:hover {
+    border: 2px solid #7DADAD;
+    box-shadow: 
+        3px 3px 2px rgba(0, 0, 0, .5),
+        inset 0px 4px 2px rgba(0, 0, 0, .65),
+        inset 4px 0px 2px rgba(0, 0, 0, .65),
+        inset 0px -4px 2px rgba(0, 0, 0, .65),
+        inset -4px 0px 2px rgba(0, 0, 0, .65);
+        
 }
 
 .custom-button a {
@@ -221,10 +221,15 @@ h1 {
 /* parallax background (hero image) */
 .parallax-background {
     position: relative;
-    background-image: url("../images/dusk-mountains.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
+    background: url("../images/dusk-mountains.jpg") center / 100vw 100vh no-repeat fixed #333;
+}
+
+.filter,
+.project-button-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 /* ---------------------------------------------------------------------- */
 /* Skills */
@@ -253,23 +258,8 @@ h1 {
 .project-name {
     text-shadow: 2px 2px 2px #a7a7a7;
 }
-/* images */
-.fat-raccoon-img {
-    background-image: url("../images/fat-raccoon.jpg");
-}
 
-.eldridge-music-img {
-    background-image: url("../images/eldridge-music.jpg");
-}
-
-.spinning-wheel-img {
-    background-image: url("../images/spinning-wheel.jpg");
-}
 /* project selection buttons with effect */
-.project-button-display {
-    display: flex;
-    justify-content: space-around;
-}
 
 .project-button,
 .project-button-depressed {
@@ -281,16 +271,18 @@ h1 {
     border-radius: 25px;
     margin: 0 .3rem;
     width: fit-content;
-    color: #fff;
+    color: #faf9f6;
+    transition-duration: .5s;
     background: linear-gradient(45deg, #59B9C9, #2A717D);
     text-shadow: 1px 1px #333,
-    2px 2px 2px #010203;
-}
-
-.project-button {
+                2px 2px 2px #010203;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
                 inset 1px 1px 2px rgba(0, 0, 0, .0),
                 inset -1px -1px 2px rgba(0, 0, 0, .0);
+}
+
+.project-button-depressed:hover {
+    /* transform: scale(1.1); */
 }
 
 .project-button-depressed,
@@ -298,68 +290,46 @@ h1 {
     transition-duration: 1s!important;
 }
 
-.project-button-depressed {
-
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
-                inset 1px 1px 2px rgba(0, 0, 0, .0),
-                inset -1px -1px 2px rgba(0, 0, 0, .0);
-}
-
 .project-button-filter {
-    position: absolute;
-    height: 100%;
-    width: 100%;
     z-index: -1;
 }
 
 .project-button-opacity {
-    /* ------------------------ */
     box-shadow: 0px 0px 0px rgba(0, 0, 0, .5),
                 inset 0px 4px 2px rgba(0, 0, 0, .65),
                 inset 4px 0px 2px rgba(0, 0, 0, .65),
                 inset 0px -4px 2px rgba(0, 0, 0, .65),
                 inset -4px 0px 2px rgba(0, 0, 0, .65);
     height: 100%;
-    width: fit-content;
 }
 
 .project-card-img,
 .project-card-text {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
     opacity: 1;
     -webkit-opacity: 1;
-    /* -webkit-backface-visibility: hidden; */
     transition-duration: .5s;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
                 inset 2px 2px 4px rgba(51, 51, 51, 0.493),
                 inset -2px -2px 4px rgba(51, 51, 51, 0.493),
                 -2px -2px 4px rgba(51, 51, 51, 0.699);
+    overflow: hidden;
 }
 
 
 .project-card-img {
-    position: relative;
-    margin: 1.5rem 0rem;
-    background-color: #faf9f6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    overflow: hidden;
     background-color: #dad6d6c9;
     height: 40rem;
 }
 
 .project-card-text {
+    min-height: 20rem;
     text-shadow: 0px 0px 2;
     color: #333;
-    border-radius: 10px;
     background-color: #dad6d6c9;
-    position: relative;
-    overflow: hidden;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 /* project summary */
 .project-summary {
@@ -383,12 +353,6 @@ h1 {
     padding-right: 1.75rem;
 }
 
-.project-tech-container {
-    display: flex;
-    justify-content: space-around;
-    /* padding-bottom: 1.5rem; */
-}
-
 .tech li {
     width: fit-content;
     margin-bottom: .75rem;
@@ -399,15 +363,7 @@ h1 {
 }
 
 /* link buttons */
-.project-links {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-}
-
 .project-links span {
-    font-size: 1rem;
-    margin:0;
     padding: .25rem .75rem;
     position: relative;
     z-index: 0;
@@ -434,12 +390,8 @@ h1 {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #faf9f6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    background: url("") top center / cover no-repeat #dad6d6c9;
 }
-
 
 /* Second part of text and image animation */
 .text-change-anim-finish {
@@ -457,14 +409,18 @@ h1 {
     100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
 }
 
-
-
-/* ---------------------------------------------------------------------- */
-/* contact */
-.font-aws i {
-    font-size: 2.5rem;
+/* images */
+.fat-raccoon-img {
+    background-image: url("../images/fat-raccoon.jpg");
 }
 
+.eldridge-music-img {
+    background-image: url("../images/eldridge-music.jpg");
+}
+
+.spinning-wheel-img {
+    background-image: url("../images/spinning-wheel.jpg");
+}
 /* ---------------------------------------------------------------------- */
 /* footer */
 .footer,
@@ -473,19 +429,12 @@ h1 {
 }
 
 .footer-background {
-    background-image: url("../images/plains-mountains.jpg");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    /* transition-duration: 1s; */
+    background: url("../images/plains-mountains.jpg") center / 100% 100% no-repeat;
     transition-duration: .5s;
 }
 
-.header-filter {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0);
+.font-aws i {
+    font-size: 2.5rem;
 }
 
 @media (max-width: 767.98px) {
