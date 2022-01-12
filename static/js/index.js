@@ -129,6 +129,10 @@ function projectsFunction() {
                 previousElement.getElementsByClassName("image-filter-container")[0].classList.add("opacityFalse");
                 // Text animation
                 previousElement.getElementsByClassName("text-filter-container")[0].classList.add("opacityFalse");
+                // Moves selected project to text ready position
+                // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("translate-away");
+                // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("translate-away");
+
 
 
                 // starts second animation and transition to clicked project
@@ -139,17 +143,26 @@ function projectsFunction() {
                     document.getElementById(idName).classList.remove("invis-project");
 
                     // Image animation
-                    document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim-finish");
+                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim-finish");
+                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("translate-away");
                     // Text animation
-                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish");
+                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish");
+                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("translate-away");
                 },500);
 
                 // Remove animations
                 setTimeout(function() {
-                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish");
-                    previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
-                    document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish");
-                    previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
+                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish");
+                    // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("project-change-anim-start");
+                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish");
+                    // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
+
+                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
+                    // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("project-change-anim-start");
+                    document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
+                    // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
+
+
 
                     // resets transitional height of previous project
                     previousElement.getElementsByClassName("text-filter-container")[0].style.height = "fit-content";

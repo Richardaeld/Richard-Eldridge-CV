@@ -384,7 +384,7 @@ h1 {
 
 .text-filter-container,
 .image-filter-container {
-    /* transition-duration: .5s; */
+    transition-duration: .5s;
     opacity: 1;
     -webkit-opacity: 1;
 }
@@ -392,6 +392,13 @@ h1 {
 .opacityFalse {
     opacity: 0;
     -webkit-opacity: 0;
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+}
+
+.translate-away {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
 }
 
 .image-filter-container {
@@ -400,9 +407,21 @@ h1 {
     width: 100%;
     background: url("") top center / cover no-repeat #dad6d6c9;
 }
+/* First part of text and image animation */
+/* .project-change-anim-start {
+    animation: .5s linear 0s 1 normal forwards text-image-fade-out-start;
+}
 
+@keyframes text-image-fade-out-start {
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@keyframes text-image-fade-out-start {
+    0%{-webkit-opacity:1;}
+    100%{-webkit-opacity:0;}
+} */
 /* Second part of text and image animation */
-.text-change-anim-finish {
+/* .text-change-anim-finish {
     animation: .5s linear 0s 1 normal forwards text-change-finish;
 }
 .img-change-anim-finish {
@@ -415,7 +434,7 @@ h1 {
 @-webkit-keyframes text-change-finish {
     0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
     100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
-}
+} */
 
 /* images */
 .fat-raccoon-img {
