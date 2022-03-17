@@ -209,13 +209,11 @@ h1 {
 
 .custom-button:hover {
     border: 2px solid #7DADAD;
-    box-shadow: 
-        3px 3px 2px rgba(0, 0, 0, .5),
-        inset 0px 4px 2px rgba(0, 0, 0, .65),
-        inset 4px 0px 2px rgba(0, 0, 0, .65),
-        inset 0px -4px 2px rgba(0, 0, 0, .65),
-        inset -4px 0px 2px rgba(0, 0, 0, .65);
-        
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5),
+                inset 0px 4px 2px rgba(0, 0, 0, .65),
+                inset 4px 0px 2px rgba(0, 0, 0, .65),
+                inset 0px -4px 2px rgba(0, 0, 0, .65),
+                inset -4px 0px 2px rgba(0, 0, 0, .65);
 }
 
 .custom-button a {
@@ -290,13 +288,19 @@ h1 {
                 inset -1px -1px 2px rgba(0, 0, 0, .0);
 }
 
-.project-button-depressed:hover {
-    /* transform: scale(1.1); */
+.hackathon-button {
+    background: linear-gradient(45deg, #C96D96, #7D3756);
 }
 
 .project-button-depressed,
 .project-button-opacity {
     transition-duration: 1s!important;
+}
+
+.project-button-depressed {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-button-filter {
@@ -334,7 +338,6 @@ h1 {
 
 .project-card-text {
     min-height: 20rem;
-    text-shadow: 0px 0px 2;
     color: #333;
     background-color: #dad6d6c9;
 }
@@ -342,6 +345,7 @@ h1 {
 .project-summary {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+    text-shadow: 1px 1px 0px #858585;
 }
 
 .project-summary,
@@ -351,13 +355,14 @@ h1 {
 
 /* Project design */
 .project-reasons {
-    list-style-type: disc;
+    /* list-style-type: disc; */
     padding-left: 4rem;
 }
 
 .project-reasons li {
     margin-bottom: .75rem;
     padding-right: 1.75rem;
+
 }
 
 .tech li {
@@ -408,34 +413,6 @@ h1 {
     width: 100%;
     background: url("") top center / cover no-repeat #dad6d6c9;
 }
-/* First part of text and image animation */
-/* .project-change-anim-start {
-    animation: .5s linear 0s 1 normal forwards text-image-fade-out-start;
-}
-
-@keyframes text-image-fade-out-start {
-    0%{opacity:1;}
-    100%{opacity:0;}
-}
-@keyframes text-image-fade-out-start {
-    0%{-webkit-opacity:1;}
-    100%{-webkit-opacity:0;}
-} */
-/* Second part of text and image animation */
-/* .text-change-anim-finish {
-    animation: .5s linear 0s 1 normal forwards text-change-finish;
-}
-.img-change-anim-finish {
-    animation: .5s linear 0s 1 normal forwards text-change-finish;
-}
-@keyframes text-change-finish {
-    0%{opacity:0; transform: translateY(100%);}
-    100%{opacity:1; transform: translateY(0);}
-}
-@-webkit-keyframes text-change-finish {
-    0%{-webkit-opacity:0; -webkit-transform: translateY(100%);}
-    100%{-webkit-opacity:1; -webkit-transform: translateY(0);}
-} */
 
 /* images */
 .fat-raccoon-img {
@@ -448,6 +425,12 @@ h1 {
 
 .spinning-wheel-img {
     background-image: url("../images/spinning-wheel.jpg");
+}
+.romancing-the-cards-img {
+    background-image: url("../images/romancing-the-cards.jpg");
+}
+.smitten-img {
+    background-image: url("../images/smitten.jpg");
 }
 /* ---------------------------------------------------------------------- */
 /* footer */
@@ -501,9 +484,6 @@ h1 {
         text-align: center;
         margin: .75rem 0;
         width: 100%;
-    }
-    .project-card-text {
-        height: 10;
     }
     .tech {
         display: none

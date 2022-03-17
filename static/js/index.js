@@ -4,11 +4,9 @@ function projectFixedHeights () {
     findProjects.forEach(setProjectHeight);
     function setProjectHeight(projectBody) {
         projectBody.getElementsByClassName("text-filter-container")[0].style.height = "fit-content";
-        // let itemHeight = projectBody.getElementsByClassName("text-filter-container")[0].offsetHeight;
         if (projectBody.classList.contains("invisMe")) {
             projectBody.classList.add("invis-project");
         }
-        // console.log(itemHeight)
     }
 }
 projectFixedHeights();
@@ -68,7 +66,6 @@ function projectsFunction() {
                 // find Id of item element
                 let idName = item.textContent.replace(/ /g, "-").toLowerCase();
 
-
                 // disable/enable buttons
                 let findbuttons = document.querySelectorAll(".project-button-filter");
                 findbuttons.forEach(disableButtons);
@@ -78,7 +75,6 @@ function projectsFunction() {
                         projectButtons.style.zIndex = -1;
                     },1000);
                 }
-
 
                 // find previous element
                 let previousElementHeight = 0;
@@ -91,10 +87,8 @@ function projectsFunction() {
                     }
                 }
 
-
                 // sets previous elements height
                 previousElement.getElementsByClassName("text-filter-container")[0].style.height = previousElementHeight + "px";
-
 
                 // Give previous element invis identifier
                 previousElement.classList.add("invisMe");
@@ -102,38 +96,27 @@ function projectsFunction() {
                 // Remove invis identifier from new selection
                 document.getElementById(idName).classList.remove("invisMe");
 
-
                 // Find new element height
                 let itemHeight = document.getElementById(idName).getElementsByClassName("text-filter-container")[0].offsetHeight;
-
 
                 // sets background height
                 setBodyBackgroundHeight(false, idName, itemHeight);
 
-
                 // Animate height change
                 previousElement.getElementsByClassName("text-filter-container")[0].style.height = (itemHeight) + "px";
-
 
                 // Removes button pushed effect
                 let removeDepressed = document.querySelector(".project-button-opacity");
                 removeDepressed.classList.remove("project-button-opacity");
 
-
                 // Adds button pushed effect
                 item.classList.add("project-button-opacity");
-
 
                 // starts first animation
                 // Image animation
                 previousElement.getElementsByClassName("image-filter-container")[0].classList.add("opacityFalse");
                 // Text animation
                 previousElement.getElementsByClassName("text-filter-container")[0].classList.add("opacityFalse");
-                // Moves selected project to text ready position
-                // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("translate-away");
-                // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("translate-away");
-
-
 
                 // starts second animation and transition to clicked project
                 setTimeout(function() {
@@ -141,38 +124,19 @@ function projectsFunction() {
                     previousElement.classList.add("invis-project");
                     // Reveals selected project
                     document.getElementById(idName).classList.remove("invis-project");
-
-                    // Image animation
-                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.add("text-change-anim-finish");
-                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("translate-away");
                     // Text animation
-                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.add("img-change-anim-finish");
-                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
                     document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
+                    // Image animation
+                    document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
                     // resets transitional height of previous project
                     previousElement.getElementsByClassName("text-filter-container")[0].style.height = "fit-content";
-                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("translate-away");
                 },500);
 
                 // Remove animations
                 setTimeout(function() {
-                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("img-change-anim-finish");
-                    // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("project-change-anim-start");
-                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("text-change-anim-finish");
-                    // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
-
-                    // document.getElementById(idName).getElementsByClassName("image-filter-container")[0].classList.remove("opacityFalse");
-                    // previousElement.getElementsByClassName("image-filter-container")[0].classList.remove("project-change-anim-start");
-                    // document.getElementById(idName).getElementsByClassName("text-filter-container")[0].classList.remove("opacityFalse");
-                    // previousElement.getElementsByClassName("text-filter-container")[0].classList.remove("project-change-anim-start");
-
-
-
                     // resets transitional height of previous project
                     previousElement.getElementsByClassName("text-filter-container")[0].style.height = "fit-content";
-
                 },1000);
-
             }
         });
     }

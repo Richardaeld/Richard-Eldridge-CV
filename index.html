@@ -14,7 +14,7 @@
 <body>
     <!-- to top arrow -->
     <div id="toTop" class="return-top invis">
-        <a href="#headerBackground">
+        <a href="#headerBackground" aria-label="Link to top of page">
             <i class="fas fa-arrow-alt-circle-up"></i>
         </a>
     </div>
@@ -25,13 +25,14 @@
             <div id="headerBackgroundFilter" class="filter"></div>
             <div class="col-10 hero-header text-center">
                 <h1 class="header-text">Richard Eldridge</h1>
-                <p class="header-text">Full Stack Developer</p>
+                <p class="header-text">Software Developer</p>
                 <div class="hero-header-buttons">
                     <a class="custom-button" href="#skills">Skills</a>
                     <a class="custom-button" href="#summary">Summary</a>
                     <a class="custom-button" href="#projects">Projects</a>
+                    <a class="custom-button" href="#projects">Hackathons</a>
                     <a class="custom-button" href="#contact">Contact</a>
-                    <a class="custom-button" href="richard_eldridge_cv_2022.pdf" target="_blank" >R&eacute;sum&eacute;</a>
+                    <a class="custom-button" href="richard_eldridge_resume_2022.pdf" target="_blank">Resume</a>
                 </div>
             </div>
         </div>
@@ -54,9 +55,10 @@
                         </ul>
                         <ul class="horizontal-ul skills mb-4">
                             <li>Flask</li>
+                            <li>React.js</li>
                             <li>BootStrap</li>
                             <li>MongoDB</li>
-                            <li>PostgreSQL (Django)</li>
+                            <li>PostgreSQL</li>
                         </ul>
                         <ul class="horizontal-ul skills mb-4">
                             <li>AWS (S3)</li>
@@ -72,9 +74,10 @@
                             <li>CSS3</li>
                             <li>Django</li>
                             <li>Flask</li>
+                            <li>React.js</li>
                             <li>BootStrap</li>
                             <li>MongoDB</li>
-                            <li>PostgreSQL (Django)</li>
+                            <li>PostgreSQL</li>
                             <li>AWS (S3)</li>
                             <li>Heroku</li>
                             <li>GitHub</li>
@@ -91,12 +94,11 @@
                     <h2 id="summary" class="header-text mt-4 mb-2">Summary</h2>
                     <div class="">
                         <p class="summary-text">
-                            Self-driven, coding boot camp graduate experienced in programming websites from scratch
-                            and well-versed in multiple coding languages. Specializations include Python, JavaScript, and
-                            CSS3. Professional skills include excellent verbal and written communications, a meticulous
-                            eye for detail, working in a team environment, and accomplishing tasks through a goaloriented mindset. Previous professional skills in troubleshooting complex problems
-                            developed from 5 years of maintenance, diagnosis and repair of motor and power
-                            equipment.
+                            Software Developer with two years of daily coding experience. Equally comfortable in front-end or
+                            back-end development. Object-Oriented Program (OOP) language specializations include Python and
+                            JavaScript with additional skills in Django, Flask, MongoDB, HTML, and CSS. Excellent written and
+                            verbal communication skills, experience working in a collaborative team environment, and strong
+                            troubleshooting skills gained from multiple hackathons and previous employment.
                         </p>
                     </div>
                 </div>
@@ -108,63 +110,95 @@
                 <div class="row justify-content-between g-0 position-rel">
                     <!-- Project selection buttons -->
                     <div class="backgroundElement">
-                        <h2 id="projects" class="header-text">Projects</h2>
+                        <h2 id="projects" class="header-text"> <span style="border-bottom: 4px solid #C96D96">Hackathons</span> / <span style="border-bottom: 4px solid #59B9C9">Projects</span></h2> 
                         <div class="mt-3 mb-4 project-button-display flex-around">
-                            <div class="project-button-container">
+                            <div class="project-button-container position-relative">
                                 <div class="project-button-filter"></div>
-                                <div class="project-button-depressed project-button-opacity">Fat Raccoon</div>
+                                <a href="#project-container">
+                                    <div class="project-button-depressed hackathon-button text-center h-100 project-button-opacity">Smitten</div>
+                                </a>
                             </div>
                             <div class="project-button-container">
                                 <div class="project-button-filter"></div>
-                                <div class="project-button-depressed">Eldridge Music Book Emporium</div>
+                                <a href="#project-container">
+                                    <div class="project-button-depressed hackathon-button text-center h-100">Spinning WheelChairs</div>
+                                </a>
                             </div>
                             <div class="project-button-container">
                                 <div class="project-button-filter"></div>
-                                <div class="project-button-depressed">Spinning Wheel Chairs</div>
+                                <a href="#project-container">
+                                    <div class="project-button-depressed text-center h-100">Eldridge Music Book Emporium</div>
+                                </a>
+                            </div>
+                            <div class="project-button-container">
+                                <div class="project-button-filter"></div>
+                                <a href="#project-container">
+                                    <div class="project-button-depressed text-center h-100">Fat Raccoon</div>
+                                </a>
+                            </div>
+                            <div class="project-button-container">
+                                <div class="project-button-filter"></div>
+                                <a href="#project-container">
+                                    <div class="project-button-depressed text-center h-100">Romancing The Cards</div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Project Fat Raccoon -->
-                    <div id="fat-raccoon" class="col-12 projectRow">
+                    <!-- In page anchor for projects buttons -->
+                    <div id="project-container"></div>
+
+                    <!-- Smitten -->
+                    <div id="smitten" class="col-12 projectRow">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
-                            <div class="col-12 col-lg-3 g-0 project-card-img ">
+                            <div class="col-12 col-lg-3 g-0 project-card-img">
                                 <!-- Image animation container -->
-                                <div class="image-filter-container fat-raccoon-img"></div>
+                                <div class="image-filter-container smitten-img"></div>
                             </div>
                             <!-- Project text body -->
                             <div class="col-12 col-lg-8 g-0 project-card-text">
                                 <!-- Text body animation container -->
                                 <div class="text-filter-container">
-                                    <h3 class="text-center mt-4 mb-3 project-name">Fat Raccoon</h3>
+                                    <h3 class="text-center mt-4 mb-3 project-name"><strong>Smitten</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        An application that serves as a community created recipe compendium that allows users to
-                                        store and view recipes with a colorful and intuitive UX.
+                                        This JSON and JavaScript powered hackathon project achieved 1st place in Code Institute's, "Love is in the Air" February 2022 Hackathon event.
+                                        This application is a Valentine's Day themed Wordle, that the team named Smitten.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            NoSQL database, MongoDB used to allow for maximum document flexibility and search speed.
+                                            <strong>Project Received:</strong> <u>1st place</u> in hackathon.
                                         </li>
                                         <li>
-                                            CSS3 / SVG art used to replace need for images and help lower load time for users
+                                            <strong>Team:</strong> of 6.
                                         </li>
                                         <li>
-                                            The Flask framework was implemented because of its minimal footprint and was used as
-                                            a tool to build an app which provided a completely unique user experience.
+                                            <strong>Time:</strong> 5 days.
+                                        </li>
+                                        <li>
+                                            <strong>My Role:</Strong> Scrum Master and Lead JavaScript Debugger.
+                                        </li>
+                                        <li>
+                                            <Strong>My Contributions:</Strong> JavaScript.
+                                        </li>
+                                        <li>
+                                            <strong>About my contributions:</strong> Added the JavaScript logic for the application's in-game, color-changing keyboard keys, debugged JavaScript logic, and was SCRUM master for this project.
+                                        </li>
+                                        <li>
+                                            <strong>Agile Methodologies used:</strong> This application was built using 4 different Agile Methodologies: SCRUM, Kanban, Lean Development, and Adaptive Software Development.
                                         </li>
                                     </ul>
                                     <!-- Project repository and app link -->
                                     <div class="project-links flex-around my-4">
-                                        <a href="https://github.com/Richardaeld/Fat_Racoon_Kitchen">
+                                        <a href="https://github.com/alissatroiano/8-your-heart-out" aria-label="Link to Smitten" rel="noopener" target="_blank">
                                             <span class="custom-button">
                                                 Repository
                                             </span>
                                         </a>
-                                        <a href="https://fat-raccoon.herokuapp.com/">
+                                        <a href="https://alissatroiano.github.io/8-your-heart-out/" aria-label="Link to Smitten's Repository" rel="noopener" target="_blank">
                                             <span class="custom-button">
-                                                Live App
+                                                Link
                                             </span>
                                         </a>
                                     </div>
@@ -172,33 +206,114 @@
                                     <div class="flex-around mb-3">
                                         <!-- tech for large screens -->
                                         <ul class="tech">
-                                            <li class="python-border">Python</li>
-                                            <li class="flask-border">Flask</li>
-                                            <li class="mongodb-border">MongoDB</li>
-                                        </ul>
-                                        <ul class="tech">
                                             <li class="javascript-border">JavaScript</li>
                                             <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
                                         </ul>
                                         <ul class="tech">
+                                            <li class="css3-border">CSS3</li>
                                             <li class="bootstrap-border">Bootstrap</li>
+                                        </ul>
+                                        <ul class="tech">
                                             <li class="github-border">Github</li>
-                                            <li class="heroku-border">Heroku</li>
                                         </ul>
                                         <!-- Tech for small screens -->
                                         <ul class="tech-small">
-                                            <li class="python-border">Python</li>
-                                            <li class="flask-border">Flask</li>
-                                            <li class="mongodb-border">MongoDB</li>
+                                            <li class="javascript-border">JavaScript</li>
+                                            <li class="html5-border">HTML5</li>
+                                            <li class="css3-border">CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li class="bootstrap-border">Bootstrap</li>
+                                            <li class="github-border">Github</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Project Spinning Wheel Chairs -->
+                    <div id="spinning-wheelchairs" class="col-12 projectRow invisMe">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <!-- Project image container -->
+                            <div class="col-12 col-lg-3 g-0 project-card-img">
+                                <!-- Image animation container -->
+                                <div class="image-filter-container opacityFalse spinning-wheel-img"></div>
+                            </div>
+                            <!-- Project text body -->
+                            <div class="col-12 col-lg-8 g-0 project-card-text">
+                                <!-- Text body animation container -->
+                                <div class="text-filter-container opacityFalse">
+                                    <h3 class="text-center mt-4 mb-3 project-name"><strong>Spinning Wheelchairs</strong></h3>
+                                    <!-- Project summary -->
+                                    <p class="project-summary">
+                                        This JavaScript-powered hackathon project achieved 3rd place in the "Trust in SODA" 2021 event
+                                        in conjunction with Code Institute. This rudimentary project was designed to help determine if
+                                        a hallway or doorway has the adequate space to accommodate a wheelchair's wide turn radius.
+                                    </p>
+                                    <!-- Project Reasons  -->
+                                    <ul class="project-reasons">
+                                        <li>
+                                            <strong>Project Received:</strong> <u>3rd place</u> in hackathon.
+                                        </li>
+                                        <li>
+                                            <strong>Team:</strong> of 4.
+                                        </li>
+                                        <li>
+                                            <strong>Time:</strong> 5 days.
+                                        </li>
+                                        <li>
+                                            <strong>My Role:</strong> JavaScript Algebra Implementation.
+                                        </li>
+                                        <li>
+                                            <strong>My Contributions:</strong> JavaScript, HTML, CSS.
+                                        </li>
+                                        <li>
+                                            <strong>About My Contributions:</strong> Researched the wheelchair turn algebra and implemented it in the JavaScript.
+                                            Also Proposed the idea for a front-end only application. This allowed the team to streamline the app and focus on best
+                                            accessibility practices over a complex design.
+                                        </li>
+                                        <li>
+                                            <strong>Agile Methodologies used:</strong> Constant communication was maintained through Slack and the team made use of GitHub's projects
+                                            for a Kanban board. This helped us determine app features that were feasible.
+                                        </li>
+                                    </ul>
+                                    <!-- Project repository and app link -->
+                                    <div class="project-links flex-around my-4">
+                                        <a href="https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2" aria-label="Link to Spinning Wheelchairs" rel="noopener" target="_blank">
+                                            <span class="custom-button">
+                                                Repository
+                                            </span>
+                                        </a>
+                                        <a href="https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/" aria-label="Link to Spinning Wheelchair's Repository" rel="noopener" target="_blank">
+                                            <span class="custom-button">
+                                                Link
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Project tech -->
+                                    <div class="flex-around mb-3">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
                                             <li class="javascript-border">JavaScript</li>
                                             <li class="html5-border">HTML5</li>
                                         </ul>
-                                        <ul class="tech-small">
+                                        <ul class="tech">
                                             <li class="css3-border">CSS3</li>
                                             <li class="bootstrap-border">Bootstrap</li>
+                                        </ul>
+                                        <ul class="tech">
                                             <li class="github-border">Github</li>
-                                            <li class="heroku-border">Heroku</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li class="javascript-border">JavaScript</li>
+                                            <li class="html5-border">HTML5</li>
+                                            <li class="css3-border">CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li class="bootstrap-border">Bootstrap</li>
+                                            <li class="github-border">Github</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -218,7 +333,7 @@
                             <div class="col-12 col-lg-8 g-0 project-card-text">
                                 <!-- Text body animation container -->
                                 <div class="text-filter-container opacityFalse">
-                                    <h3 class="text-center mt-4 mb-3 project-name">Eldridge Music Book Emporium</h3>
+                                    <h3 class="text-center mt-4 mb-3 project-name"><strong>Eldridge Music Book Emporium</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
                                         Eldridge Music Book Emporium is a mock, fundamental e-commerce application designed for users to
@@ -228,29 +343,30 @@
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            Django and Allauth were utilized to meet an accelerated deadline and create fully
-                                            functional backend and authentication system.
+                                            Sole developer of class full-stack Django project that received a distinction of <strong>Merit</strong>.
                                         </li>
                                         <li>
-                                            SQLite3 (development) and PostGreSQL (deployment) database systems were used
-                                            through Django's model system to allow for quick and easily form validation.
+                                            Django was utilized because of its extensive capabilities as a high-level framework.
+                                        </li>
+                                        <li>
+                                            Django-Allauth was implemented to create a fully functional and visually appealing
+                                            authentication system.
                                         </li>
                                         <li>
                                             Stripe's API provided an easy and efficient method to accept and process user
                                             payments.
-
                                         </li>
                                     </ul>
                                     <!-- Project repository and app link -->
                                     <div class="project-links flex-around my-4">
-                                        <a href="https://github.com/Richardaeld/Eldridge_Music">
+                                        <a href="https://github.com/Richardaeld/Eldridge_Music" aria-label="Link to Eldridge Music Book Emporium" rel="noopener" target="_blank">
                                             <span class="custom-button">
                                                 Repository
                                             </span>
                                         </a>
-                                        <a href="https://eldridge-music.herokuapp.com/">
+                                        <a href="https://eldridge-music.herokuapp.com/" aria-label="Link to Eldridge Music Book Emporium's Repository" rel="noopener" target="_blank">
                                             <span class="custom-button">
-                                                Live App
+                                                Link
                                             </span>
                                         </a>
                                     </div>
@@ -296,49 +412,132 @@
 
                         </div>
                     </div>
-                    <!-- Project Spinning Wheel Chairs -->
-                    <div id="spinning-wheel-chairs" class="col-12 projectRow invisMe">
+                    <!-- Project Fat Raccoon -->
+                    <div id="fat-raccoon" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
-                            <div class="col-12 col-lg-3 g-0 project-card-img">
+                            <div class="col-12 col-lg-3 g-0 project-card-img ">
                                 <!-- Image animation container -->
-                                <div class="image-filter-container opacityFalse spinning-wheel-img"></div>
+                                <div class="image-filter-container opacityFalse fat-raccoon-img"></div>
+                            </div>
+                            <!-- Project text body -->
+                            <div class="col-12 col-lg-8 g-0 project-card-text">
+                                <!-- Text body animation container -->
+                                <div class="text-filter-container  opacityFalse">
+                                    <h3 class="text-center mt-4 mb-3 project-name"><strong>Fat Raccoon</strong></h3>
+                                    <!-- Project summary -->
+                                    <p class="project-summary">
+                                        An application that serves as a community created recipe compendium that allows users to
+                                        store and view recipes with a colorful and intuitive UX.
+                                    </p>
+                                    <!-- Project Reasons  -->
+                                    <ul class="project-reasons">
+                                        <li>
+                                            Sole developer of class full-stack Flask project that received a distinction of <strong>Merit</strong>.                                        </li>
+                                        <li>
+                                            NoSQL database, MongoDB used to allow for maximum document flexibility and search speed.
+                                        </li>
+                                        <li>
+                                            CSS3 / SVG art used to replace need for images and help lower load time for users
+                                        </li>
+                                        <li>
+                                            The Flask framework was implemented because of its minimal footprint and was used as
+                                            a tool to build an app which provided a completely unique user experience.
+                                        </li>
+                                    </ul>
+                                    <!-- Project repository and app link -->
+                                    <div class="project-links flex-around my-4">
+                                        <a href="https://github.com/Richardaeld/Fat_Racoon_Kitchen" aria-label="Link to the Fat Raccoon" rel="noopener" target="_blank">
+                                            <span class="custom-button">
+                                                Repository
+                                            </span>
+                                        </a>
+                                        <a href="https://fat-raccoon.herokuapp.com/" aria-label="Link to the Fat Raccoon's Repository" rel="noopener" target="_blank">
+                                            <span class="custom-button">
+                                                Link
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Project tech -->
+                                    <div class="flex-around mb-3">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li class="python-border">Python</li>
+                                            <li class="flask-border">Flask</li>
+                                            <li class="mongodb-border">MongoDB</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li class="javascript-border">JavaScript</li>
+                                            <li class="html5-border">HTML5</li>
+                                            <li class="css3-border">CSS3</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li class="bootstrap-border">Bootstrap</li>
+                                            <li class="github-border">Github</li>
+                                            <li class="heroku-border">Heroku</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li class="python-border">Python</li>
+                                            <li class="flask-border">Flask</li>
+                                            <li class="mongodb-border">MongoDB</li>
+                                            <li class="javascript-border">JavaScript</li>
+                                            <li class="html5-border">HTML5</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li class="css3-border">CSS3</li>
+                                            <li class="bootstrap-border">Bootstrap</li>
+                                            <li class="github-border">Github</li>
+                                            <li class="heroku-border">Heroku</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Romancing The Cards -->
+                    <div id="romancing-the-cards" class="col-12 projectRow invisMe">
+                        <div class="row justify-content-center justify-content-lg-between">
+                            <!-- Project image container -->
+                            <div class="col-12 col-lg-3 g-0 project-card-img ">
+                                <!-- Image animation container -->
+                                <div class="image-filter-container opacityFalse romancing-the-cards-img"></div>
                             </div>
                             <!-- Project text body -->
                             <div class="col-12 col-lg-8 g-0 project-card-text">
                                 <!-- Text body animation container -->
                                 <div class="text-filter-container opacityFalse">
-                                    <h3 class="text-center mt-4 mb-3 project-name">Spinning Wheel Chairs</h3>
+                                    <h3 class="text-center mt-4 mb-3 project-name"><strong>Romancing The Cards</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        This JavaScript-powered hackathon project achieved 3rd place in the Trust in SODA 2020 event
-                                        in conjunction with Code Institute. This rudimentary project was designed to help determine if
-                                        a hallway or doorway has the adequate space to accommodate a wheelchair's wide turn radius.
+                                        This JavaScript powered application illustrates how a simple game can entertain and help with learning/memorizing words in a different language.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            Accessibility was the theme for this hackathon, so this project was streamlined to focus
-                                            on best accessibility practices over a fancy design.
+                                            Sole developer of class front-end JavaScript project.
                                         </li>
                                         <li>
-                                            To keep the project straightforward, JavaScript and JSON were used to pass information
-                                            between pages instead of implementing a fully featured backend.
+                                            JS Objects were used to store the words of each library.
                                         </li>
                                         <li>
-                                            Agile software development practices were utilized through constant communication
-                                            via GitPod Projects and Slack which helped determine app features that were feasible.                                    </li>
+                                            A flashy JS and CSS powered flip animation was added to help entertain users while playing the game.
+                                        </li>
+                                        <li>
+                                            A multitude of different options were implamented to the start screen to give returning users additional content.
+                                        </li>
                                     </ul>
                                     <!-- Project repository and app link -->
                                     <div class="project-links flex-around my-4">
-                                        <a href="https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2">
+                                        <a href="https://richardaeld.github.io/google_translate_game/" aria-label="Link to Romancing The Cards" rel="noopener" target="_blank">
                                             <span class="custom-button">
                                                 Repository
                                             </span>
                                         </a>
-                                        <a href="https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/">
+                                        <a href="https://github.com/Richardaeld/google_translate_game" aria-label="Link to Romancing The Card's Repository" rel="noopener" target="_blank">
                                             <span class="custom-button">
-                                                Live App
+                                                Link
                                             </span>
                                         </a>
                                     </div>
@@ -372,6 +571,8 @@
 
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -381,21 +582,21 @@
                 <div class="font-aws row justify-content-around">
                     <div class="col-6 flex-center">
                         <!-- Email link -->
-                        <a href="mailto:" class="mx-4">
+                        <a href="mailto:richardaeld@gmail.com" aria-label="Link to Richard Eldridge's email" class="mx-4">
                             <i class="fas fa-envelope-square"></i>
                         </a>
                         <!-- GitHub link -->
-                        <a href="https://github.com/Richardaeld" class="mx-4">
+                        <a href="https://github.com/Richardaeld" target="_blank" rel="noopener" aria-label="Link to Richard Eldridge's GitHub" class="mx-4">
                             <i class="fab fa-github-square"></i>
                         </a>
                         <!-- Linkedin link -->
-                        <a href="https://www.linkedin.com/in/richard-eldridge-4200221ab/" class="mx-4">
+                        <a href="https://www.linkedin.com/in/richard-eldridge-4200221ab/" target="_blank" rel="noopener" aria-label="Link to Richard Eldridge's LinkedIn" class="mx-4">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
                     <!-- Rights reserved footer -->
                     <div class="footer-reserved flex-center">
-                        <p>&#169 2022 Richard Eldridge. <span>All rights reserved.</span></p>
+                        <p>&#169; 2022 Richard Eldridge. <span>All rights reserved.</span></p>
                     </div>
                 </div>
             </div>

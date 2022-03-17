@@ -1,7 +1,7 @@
 // ---- Fading light effect for Hero image ----
 let headerBackgroundFilter = document.getElementById('headerBackgroundFilter');
 let toTop = document.getElementById("toTop");
-// Find view height 
+// Find view height
 let viewHeight = window.innerHeight;
 let view100 = viewHeight;
 let view75 = viewHeight * 0.75;
@@ -9,9 +9,9 @@ let view50 = viewHeight * 0.5;
 let view25 = viewHeight * 0.25;
 
 
-
+// finds start time for delay function
 let previousScrollTime = new Date().getTime();
-
+// Scrolling function to add dimming filter to hero image
 window.addEventListener('scroll', function() {
     if (previousScrollTime + 100 < parseInt(new Date().getTime())) {
     if(this.scrollY < viewHeight) {
@@ -20,7 +20,6 @@ window.addEventListener('scroll', function() {
             toTop.classList.add("invis");
         }
 
-        // if(this.scrollY == 0) {
         if (this.scrollY > 0 && this.scrollY < view25) {
             headerBackgroundFilter.style.backgroundColor = 'rgba(18, 19, 21, 0)';
         } else if (this.scrollY > view25 && this.scrollY < view50) {
@@ -36,6 +35,7 @@ window.addEventListener('scroll', function() {
             toTop.classList.remove("invis");
         }
     }
+    // Checks time padded
     previousScrollTime = new Date().getTime();
     }
 });
