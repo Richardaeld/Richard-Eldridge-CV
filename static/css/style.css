@@ -84,65 +84,6 @@ h1 {
     font-family: "Roboto Slab", sans-serif;
 }
 
-/* border colors for technology */
-.python-border {
-    border-bottom: 3px solid #336E9D;
-}
-
-.flask-border {
-    border-bottom: 3px solid #faf9f6;
-}
-
-.mongodb-border {
-    border-bottom: 3px solid #10AA50;
-}
-
-.heroku-border {
-    border-bottom: 3px solid #410099;
-    border-bottom: 3px solid #954ce4;
-}
-
-.github-border {
-    border-bottom: 3px solid #F34F29;
-    border-bottom: 3px solid #333;
-}
-
-.javascript-border {
-    border-bottom: 3px solid #FDD83C;
-}
-
-.bootstrap-border {
-    border-bottom: 3px solid #7B09F8;
-}
-
-.html5-border {
-    border-bottom: 3px solid #EF652A;
-}
-
-.css3-border {
-    border-bottom: 3px solid #008DD3;
-}
-
-.postgresql-border {
-    border-bottom: 3px solid #336791;
-}
-
-.django-border{
-    border-bottom: 3px solid #0DC61E;
-}
-
-.stripe-border {
-    border-bottom: 3px solid #665BFF;
-}
-
-.aws-border {
-    border-bottom: 3px solid #FF9A00;
-}
-
-.git-border {
-    border-bottom: 3px solid #F34F29;
-}
-
 /* ---------------------------------------------------------------------- */
 /* Hero image, header text, and buttons */
 /* To top arrow */
@@ -267,7 +208,7 @@ h1 {
 }
 
 /* project selection buttons with effect */
-
+.project-link-button,
 .project-button,
 .project-button-depressed {
     position: relative;
@@ -340,6 +281,7 @@ h1 {
     min-height: 20rem;
     color: #333;
     background-color: #dad6d6c9;
+    padding-bottom: 2rem;
 }
 /* project summary */
 .project-summary {
@@ -355,14 +297,34 @@ h1 {
 
 /* Project design */
 .project-reasons {
-    /* list-style-type: disc; */
     padding-left: 4rem;
+}
+
+.project-award {
+    text-decoration: underline;
+    text-decoration-color: #59B9C9;
+}
+
+.hackathon-award {
+    text-decoration: underline;
+    text-decoration-color: #C96D96;
 }
 
 .project-reasons li {
     margin-bottom: .75rem;
     padding-right: 1.75rem;
 
+}
+
+.tech-header,
+.link-header {
+    font-size: 1.5rem;
+    padding-left: 4rem;
+}
+
+.tech,
+.tech-small {
+    list-style-type: disc;
 }
 
 .tech li {
@@ -374,9 +336,16 @@ h1 {
     display: none;
 }
 
+.project-tech ul > li::marker {
+    color: #59B9C9;
+}
+.hackathon-tech ul > li::marker {
+    color: #7D3756;
+}
+
 /* link buttons */
 .project-links span {
-    padding: .25rem .75rem;
+    padding: .75rem 2.75rem;
     position: relative;
     z-index: 0;
 }
@@ -468,6 +437,12 @@ h1 {
         position: relative;
         top: 1.75rem;
         margin: .5rem .5rem;
+    }
+
+    .custom-button {
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     /* Skills */
     .skills {

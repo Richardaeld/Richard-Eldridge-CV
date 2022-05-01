@@ -19,28 +19,27 @@
         </a>
     </div>
     <!-- hero image paralax background -->
-    <div id="headerBackground" class="container-fluid parallax-background">
+    <header id="headerBackground" class="container-fluid parallax-background">
         <!-- hero image and name -->
         <div class="row g-0 justify-content-around">
             <div id="headerBackgroundFilter" class="filter"></div>
             <div class="col-10 hero-header text-center">
                 <h1 class="header-text">Richard Eldridge</h1>
                 <p class="header-text">Software Developer</p>
-                <div class="hero-header-buttons">
+                <nav class="hero-header-buttons">
                     <a class="custom-button" href="#skills">Skills</a>
                     <a class="custom-button" href="#summary">Summary</a>
-                    <a class="custom-button" href="#projects">Projects</a>
-                    <a class="custom-button" href="#projects">Hackathons</a>
+                    <a class="custom-button" href="#projects">Hackathons / Projects</a>
                     <a class="custom-button" href="#contact">Contact</a>
                     <a class="custom-button" href="richard_eldridge_resume_2022.pdf" target="_blank">Resume</a>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
+    </header>
     <!-- body image -->
-    <div class="container-fluid footer-background">
+    <main class="container-fluid footer-background">
         <!-- Skills -->
-        <div class="container-fluid backgroundElement">
+        <section class="container-fluid backgroundElement">
             <div class="row justify-content-center">
                 <div class="col-10">
                     <h2 id="skills" class="header-text mt-4 mb-2">Skills</h2>
@@ -86,9 +85,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Summary -->
-        <div class="container-fluid backgroundElement">
+        <section class="container-fluid backgroundElement">
             <div class="row justify-content-center">
                 <div class="col-10 mb-5">
                     <h2 id="summary" class="header-text mt-4 mb-2">Summary</h2>
@@ -103,9 +102,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Projects -->
-        <div class="row justify-content-around mb-5">
+        <section class="row justify-content-around mb-5">
             <div class="col-10 g-0">
                 <div class="row justify-content-between g-0 position-rel">
                     <!-- Project selection buttons -->
@@ -148,7 +147,7 @@
                     <div id="project-container"></div>
 
                     <!-- Smitten -->
-                    <div id="smitten" class="col-12 projectRow">
+                    <article id="smitten" class="col-12 projectRow">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
                             <div class="col-12 col-lg-3 g-0 project-card-img">
@@ -162,13 +161,13 @@
                                     <h3 class="text-center mt-4 mb-3 project-name"><strong>Smitten</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        This JSON and JavaScript powered hackathon project achieved 1st place in Code Institute's, "Love is in the Air" February 2022 Hackathon event.
+                                        This JSON and JavaScript-powered hackathon project achieved 1st place in Code Institute's, "Love is in the Air" February 2022 Hackathon event.
                                         This application is a Valentine's Day themed Wordle, that the team named Smitten.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            <strong>Project Received:</strong> <u>1st place</u> in hackathon.
+                                            <strong>Awards:</strong> <span class="hackathon-award">1st place</span> in Code Institute's, "Love is in the Air" hackathon.
                                         </li>
                                         <li>
                                             <strong>Team:</strong> of 6.
@@ -183,57 +182,61 @@
                                             <Strong>My Contributions:</Strong> JavaScript.
                                         </li>
                                         <li>
-                                            <strong>About my contributions:</strong> Added the JavaScript logic for the application's in-game, color-changing keyboard keys, debugged JavaScript logic, and was SCRUM master for this project.
+                                            <strong>About my contributions:</strong> Added the JavaScript logic for the application's in-game, color-changing keyboard keys, debugged JavaScript logic, and was SCRUM Master for this project.
                                         </li>
                                         <li>
                                             <strong>Agile Methodologies used:</strong> This application was built using 4 different Agile Methodologies: SCRUM, Kanban, Lean Development, and Adaptive Software Development.
                                         </li>
                                     </ul>
+                                    <!-- Project tech -->
+                                    <p class="tech-header"><strong>Technology Used:</strong></p>
+                                    <div class="flex-around mb-3 hackathon-tech">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>CSS3</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>Github</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                        </ul>
+                                    </div>
                                     <!-- Project repository and app link -->
+                                    <p class="link-header"><strong>Links:</strong></p>
                                     <div class="project-links flex-around my-4">
                                         <a href="https://github.com/alissatroiano/8-your-heart-out" aria-label="Link to Smitten" rel="noopener" target="_blank">
-                                            <span class="custom-button">
+                                            <span class="project-link-button hackathon-button">
                                                 Repository
                                             </span>
                                         </a>
                                         <a href="https://alissatroiano.github.io/8-your-heart-out/" aria-label="Link to Smitten's Repository" rel="noopener" target="_blank">
-                                            <span class="custom-button">
-                                                Link
+                                            <span class="project-link-button hackathon-button">
+                                                App
                                             </span>
                                         </a>
                                     </div>
-                                    <!-- Project tech -->
-                                    <div class="flex-around mb-3">
-                                        <!-- tech for large screens -->
-                                        <ul class="tech">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="css3-border">CSS3</li>
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="github-border">Github</li>
-                                        </ul>
-                                        <!-- Tech for small screens -->
-                                        <ul class="tech-small">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                        </ul>
-                                        <ul class="tech-small">
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                        </ul>
-                                    </div>
+
+
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                    </article>
                     <!-- Project Spinning Wheel Chairs -->
-                    <div id="spinning-wheelchairs" class="col-12 projectRow invisMe">
+                    <article id="spinning-wheelchairs" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
                             <div class="col-12 col-lg-3 g-0 project-card-img">
@@ -249,12 +252,12 @@
                                     <p class="project-summary">
                                         This JavaScript-powered hackathon project achieved 3rd place in the "Trust in SODA" 2021 event
                                         in conjunction with Code Institute. This rudimentary project was designed to help determine if
-                                        a hallway or doorway has the adequate space to accommodate a wheelchair's wide turn radius.
+                                        a hallway or doorway has adequate space to accommodate a wheelchair's wide turn radius.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            <strong>Project Received:</strong> <u>3rd place</u> in hackathon.
+                                            <strong>Awards:</strong> <span class="hackathon-award">3rd place</span> in Code Institute's, "Trust in SODA 2021" hackathon.
                                         </li>
                                         <li>
                                             <strong>Team:</strong> of 4.
@@ -278,51 +281,54 @@
                                             for a Kanban board. This helped us determine app features that were feasible.
                                         </li>
                                     </ul>
+
+                                    <!-- Project tech -->
+                                    <p class="tech-header"><strong>Technology Used:</strong></p>
+                                    <div class="flex-around mb-3 hackathon-tech">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>CSS3</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>Github</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                        </ul>
+                                    </div>
                                     <!-- Project repository and app link -->
+                                    <p class="link-header"><strong>Links:</strong></p>
                                     <div class="project-links flex-around my-4">
                                         <a href="https://github.com/Richardaeld/Hackathaon-trust-in-soda-team-2" aria-label="Link to Spinning Wheelchairs" rel="noopener" target="_blank">
-                                            <span class="custom-button">
+                                            <span class="project-link-button hackathon-button">
                                                 Repository
                                             </span>
                                         </a>
                                         <a href="https://richardaeld.github.io/Hackathaon-trust-in-soda-team-2/" aria-label="Link to Spinning Wheelchair's Repository" rel="noopener" target="_blank">
-                                            <span class="custom-button">
-                                                Link
+                                            <span class="project-link-button hackathon-button">
+                                                App
                                             </span>
                                         </a>
-                                    </div>
-                                    <!-- Project tech -->
-                                    <div class="flex-around mb-3">
-                                        <!-- tech for large screens -->
-                                        <ul class="tech">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="css3-border">CSS3</li>
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="github-border">Github</li>
-                                        </ul>
-                                        <!-- Tech for small screens -->
-                                        <ul class="tech-small">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                        </ul>
-                                        <ul class="tech-small">
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                    </article>
                     <!-- Project Eldridge Music Book Emporium -->
-                    <div id="eldridge-music-book-emporium" class="col-12 projectRow invisMe">
+                    <article id="eldridge-music-book-emporium" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
                             <div class="col-12 col-lg-3 g-0 project-card-img">
@@ -336,84 +342,80 @@
                                     <h3 class="text-center mt-4 mb-3 project-name"><strong>Eldridge Music Book Emporium</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        Eldridge Music Book Emporium is a mock, fundamental e-commerce application designed for users to
-                                        search, rate, and purchase music books. This application utilizes toast notifications for simple
-                                        interactions and email notifications when users create an account or purchase books.
+                                        Eldridge Music Book Emporium is an e-commerce bookstore application that is Django-powered and
+                                        hosts several interactive functions that are modeled after modern e-commerce sites, such as: notifying
+                                        users whenever a change has been made to their cart, retaining a purchase history, remembering a user's
+                                        delivery address, and allowing users to rate products. To create a safe and secure checkout method,
+                                        this application incorporates Stripe's API.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            Sole developer of class full-stack Django project that received a distinction of <strong>Merit</strong>.
+                                            <strong>Awards:</strong> This project received a <span class="project-award">Merit</span> for going above and beyond class requirements.
                                         </li>
                                         <li>
-                                            Django was utilized because of its extensive capabilities as a high-level framework.
-                                        </li>
-                                        <li>
-                                            Django-Allauth was implemented to create a fully functional and visually appealing
-                                            authentication system.
-                                        </li>
-                                        <li>
-                                            Stripe's API provided an easy and efficient method to accept and process user
-                                            payments.
+                                            <strong>Team:</strong> Sole Developer.
                                         </li>
                                     </ul>
+                                    <!-- Project tech -->
+                                    <p class="tech-header"><strong>Technology Used:</strong></p>
+                                    <div class="flex-around mb-3 project-tech">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li>Python</li>
+                                            <li>Django</li>
+                                            <li>PostgreSQL</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>Heroku</li>
+                                            <li>AWS</li>
+                                            <li>Stripe</li>
+                                        </ul>
+                                        <!-- tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li>Python</li>
+                                            <li>Django</li>
+                                            <li>PostgreSQL</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                            <li>Heroku</li>
+                                            <li>AWS</li>
+                                            <li>Stripe</li>
+                                        </ul>
+                                    </div>
                                     <!-- Project repository and app link -->
+                                    <p class="link-header"><strong>Links:</strong></p>
                                     <div class="project-links flex-around my-4">
                                         <a href="https://github.com/Richardaeld/Eldridge_Music" aria-label="Link to Eldridge Music Book Emporium" rel="noopener" target="_blank">
-                                            <span class="custom-button">
+                                            <span class="project-link-button">
                                                 Repository
                                             </span>
                                         </a>
                                         <a href="https://eldridge-music.herokuapp.com/" aria-label="Link to Eldridge Music Book Emporium's Repository" rel="noopener" target="_blank">
-                                            <span class="custom-button">
-                                                Link
+                                            <span class="project-link-button">
+                                                App
                                             </span>
                                         </a>
-                                    </div>
-                                    <!-- Project tech -->
-                                    <div class="flex-around mb-3">
-                                        <!-- tech for large screens -->
-                                        <ul class="tech">
-                                            <li class="python-border">Python</li>
-                                            <li class="django-border">Django</li>
-                                            <li class="postgresql-border">PostgreSQL</li>
-                                            <li class="javascript-border">JavaScript</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="heroku-border">Heroku</li>
-                                            <li class="aws-border">AWS</li>
-                                            <li class="stripe-border">Stripe</li>
-                                        </ul>
-                                        <!-- tech for small screens -->
-                                        <ul class="tech-small">
-                                            <li class="python-border">Python</li>
-                                            <li class="django-border">Django</li>
-                                            <li class="postgresql-border">PostgreSQL</li>
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                        </ul>
-                                        <ul class="tech-small">
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                            <li class="heroku-border">Heroku</li>
-                                            <li class="aws-border">AWS</li>
-                                            <li class="stripe-border">Stripe</li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                    </article>
                     <!-- Project Fat Raccoon -->
-                    <div id="fat-raccoon" class="col-12 projectRow invisMe">
+                    <article id="fat-raccoon" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
                             <div class="col-12 col-lg-3 g-0 project-card-img ">
@@ -427,77 +429,77 @@
                                     <h3 class="text-center mt-4 mb-3 project-name"><strong>Fat Raccoon</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        An application that serves as a community created recipe compendium that allows users to
-                                        store and view recipes with a colorful and intuitive UX.
+                                        The Fat Raccoon was designed to facilitate a home cooking community for the accumulation and sharing of family
+                                        recipes. This application allows its users to create an account, which will track your previously viewed recipes,
+                                        favorites, and uploaded recipes. It also allows for multiple ways to search for recipes and when you've selected
+                                        a recipe you want to cook it provides a cross-out function for the steps and ingredients you've completed and used.
+                                        This application leverages the flexibility of MongoDB's NoSQL database and Flask's minimal framework to allow for a
+                                        truly custom and unique application.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            Sole developer of class full-stack Flask project that received a distinction of <strong>Merit</strong>.                                        </li>
-                                        <li>
-                                            NoSQL database, MongoDB used to allow for maximum document flexibility and search speed.
+                                            <strong>Awards:</strong> This project received a <span class="project-award">Merit</span> for going above and beyond class requirements.
                                         </li>
                                         <li>
-                                            CSS3 / SVG art used to replace need for images and help lower load time for users
-                                        </li>
-                                        <li>
-                                            The Flask framework was implemented because of its minimal footprint and was used as
-                                            a tool to build an app which provided a completely unique user experience.
+                                            <strong>Team:</strong> Sole Developer.
                                         </li>
                                     </ul>
+                                    <!-- Project tech -->
+                                    <p class="tech-header"><strong>Technology Used:</strong></p>
+                                    <div class="flex-around mb-3 project-tech">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li>Python</li>
+                                            <li>Flask</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li>Python</li>
+                                            <li>Flask</li>
+                                            <li>MongoDB</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li>CSS3</li>
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                            <li>Heroku</li>
+                                        </ul>
+                                    </div>
                                     <!-- Project repository and app link -->
+                                    <p class="link-header"><strong>Links:</strong></p>
                                     <div class="project-links flex-around my-4">
                                         <a href="https://github.com/Richardaeld/Fat_Racoon_Kitchen" aria-label="Link to the Fat Raccoon" rel="noopener" target="_blank">
-                                            <span class="custom-button">
+                                            <span class="project-link-button">
                                                 Repository
                                             </span>
                                         </a>
                                         <a href="https://fat-raccoon.herokuapp.com/" aria-label="Link to the Fat Raccoon's Repository" rel="noopener" target="_blank">
-                                            <span class="custom-button">
-                                                Link
+                                            <span class="project-link-button">
+                                                App
                                             </span>
                                         </a>
-                                    </div>
-                                    <!-- Project tech -->
-                                    <div class="flex-around mb-3">
-                                        <!-- tech for large screens -->
-                                        <ul class="tech">
-                                            <li class="python-border">Python</li>
-                                            <li class="flask-border">Flask</li>
-                                            <li class="mongodb-border">MongoDB</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                            <li class="heroku-border">Heroku</li>
-                                        </ul>
-                                        <!-- Tech for small screens -->
-                                        <ul class="tech-small">
-                                            <li class="python-border">Python</li>
-                                            <li class="flask-border">Flask</li>
-                                            <li class="mongodb-border">MongoDB</li>
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                        </ul>
-                                        <ul class="tech-small">
-                                            <li class="css3-border">CSS3</li>
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                            <li class="heroku-border">Heroku</li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                    </article>
                     <!-- Romancing The Cards -->
-                    <div id="romancing-the-cards" class="col-12 projectRow invisMe">
+                    <article id="romancing-the-cards" class="col-12 projectRow invisMe">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Project image container -->
                             <div class="col-12 col-lg-3 g-0 project-card-img ">
@@ -511,73 +513,68 @@
                                     <h3 class="text-center mt-4 mb-3 project-name"><strong>Romancing The Cards</strong></h3>
                                     <!-- Project summary -->
                                     <p class="project-summary">
-                                        This JavaScript powered application illustrates how a simple game can entertain and help with learning/memorizing words in a different language.
+                                        The purpose of this, JavaScript-powered, game is to illustrate how a simple matching game can entertain
+                                        and help with learning words in a different language. This game boasts 17 different words in 6 languages,
+                                        3 different game settings, and 1 cosmetic setting to help encourage returning users. Words for each game
+                                        are selected at random so each playthrough has non-linear gameplay.
                                     </p>
                                     <!-- Project Reasons  -->
                                     <ul class="project-reasons">
                                         <li>
-                                            Sole developer of class front-end JavaScript project.
-                                        </li>
-                                        <li>
-                                            JS Objects were used to store the words of each library.
-                                        </li>
-                                        <li>
-                                            A flashy JS and CSS powered flip animation was added to help entertain users while playing the game.
-                                        </li>
-                                        <li>
-                                            A multitude of different options were implamented to the start screen to give returning users additional content.
+                                            <strong>Team:</strong> Sole Developer.
                                         </li>
                                     </ul>
+                                    <!-- Project tech -->
+                                    <p class="tech-header"><strong>Technology Used:</strong></p>
+                                    <div class="flex-around mb-3 project-tech">
+                                        <!-- tech for large screens -->
+                                        <ul class="tech">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>CSS3</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                        <ul class="tech">
+                                            <li>Github</li>
+                                        </ul>
+                                        <!-- Tech for small screens -->
+                                        <ul class="tech-small">
+                                            <li>JavaScript</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                        <ul class="tech-small">
+                                            <li>Bootstrap</li>
+                                            <li>Github</li>
+                                        </ul>
+                                    </div>
                                     <!-- Project repository and app link -->
+                                    <p class="link-header"><strong>Links:</strong></p>
                                     <div class="project-links flex-around my-4">
                                         <a href="https://richardaeld.github.io/google_translate_game/" aria-label="Link to Romancing The Cards" rel="noopener" target="_blank">
-                                            <span class="custom-button">
+                                            <span class="project-link-button">
                                                 Repository
                                             </span>
                                         </a>
                                         <a href="https://github.com/Richardaeld/google_translate_game" aria-label="Link to Romancing The Card's Repository" rel="noopener" target="_blank">
-                                            <span class="custom-button">
-                                                Link
+                                            <span class="project-link-button">
+                                                App
                                             </span>
                                         </a>
-                                    </div>
-                                    <!-- Project tech -->
-                                    <div class="flex-around mb-3">
-                                        <!-- tech for large screens -->
-                                        <ul class="tech">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="css3-border">CSS3</li>
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                        </ul>
-                                        <ul class="tech">
-                                            <li class="github-border">Github</li>
-                                        </ul>
-                                        <!-- Tech for small screens -->
-                                        <ul class="tech-small">
-                                            <li class="javascript-border">JavaScript</li>
-                                            <li class="html5-border">HTML5</li>
-                                            <li class="css3-border">CSS3</li>
-                                        </ul>
-                                        <ul class="tech-small">
-                                            <li class="bootstrap-border">Bootstrap</li>
-                                            <li class="github-border">Github</li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
-
+                    </article>
 
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Contact -->
-        <div class="row justify-content-center backgroundElement">
+        <footer class="row justify-content-center backgroundElement">
             <div id="contact" class="col-10 my-3 footer ">
                 <div class="font-aws row justify-content-around">
                     <div class="col-6 flex-center">
@@ -600,8 +597,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </footer>
+    </main>
     <script src="static/js/index.js"></script>
     <script src="static/js/finished.js"></script>
 </body>
