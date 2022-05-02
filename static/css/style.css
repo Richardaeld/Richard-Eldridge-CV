@@ -33,6 +33,7 @@ ul li {
 .flex-around {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .flex-center {
@@ -348,6 +349,11 @@ h1 {
     padding: .75rem 2.75rem;
     position: relative;
     z-index: 0;
+
+}
+
+.test123 {
+    width:fit-content!important;
 }
 /* project transition containers and animations */
 .invis-project {
@@ -400,6 +406,10 @@ h1 {
 }
 .smitten-img {
     background-image: url("../images/smitten.jpg");
+}
+
+.dm-tool-img {
+    background-image: url("../images/dm-tool.jpg")
 }
 /* ---------------------------------------------------------------------- */
 /* footer */
